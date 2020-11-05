@@ -69,6 +69,7 @@
     <section class="quote-section">
         <div class="container">
             <img src="images/background-bubbles.png" alt="background-bubbles">
+            <span id="form_container">
             <div class="row">
                 <div class="col-12">
                     <h2>GET A FREE QUOTE</h2>
@@ -93,6 +94,16 @@
                     <button type="button" class="btn btn-primary" onclick="sendEmail()">Submit</button>
                 </div>
             </div>
+            </span>
+            <span id="form_success" style="display: none;">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Thanks!</h2>
+                        <div>We'll contact you shortly to discuss next steps.</div>
+                        <div>Have a great day!</div>
+                    </div>
+                </div>
+            </span>
         </div>
     </section>
 
@@ -214,7 +225,9 @@
                 type: "POST",
                 success:function(data){
                     console.log(data);
-                    alert('You message has been sent successfully.')
+                    $("#form_container").hide();
+                    $("#form_success").show();
+                    //alert('You message has been sent successfully.')
                     //$("#mail-status").html(data);
                 },
                 error:function (){}

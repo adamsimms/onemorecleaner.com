@@ -402,6 +402,9 @@ section {
   line-height: 82.9%;
   color: #F5F4F2;
   margin-bottom: 30px; }
+  .quote-section div{
+    color: #F5F4F2;
+  }
   @media (min-width: 768px) {
     .quote-section h2 {
       font-size: 72px;
