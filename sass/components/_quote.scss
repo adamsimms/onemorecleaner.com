@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+//quote css
+
+.quote-section {
+    @media (min-width: 768px) {
+        padding-top: 150px;
+        padding-bottom: 85px;
+    }
+    h2 {
+        font-family: 'Teko', sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 82.9%;
+        color: #F5F4F2;
+        margin-bottom: 30px;
+        @media (min-width: 768px) {
+            font-size: 72px;
+            line-height: 82.9%;
+        }
+    }
+    .container {
+        background: #25425F;
+        box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 66px 50px 30px;
+        position: relative;
+        @media (min-width: 768px) {
+            border-radius: 30px;
+        }
+        img {
+            position: absolute;
+            right: -35px;
+            top: -30px;
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+    }
+
+    .form-group {
+        label {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        input {
+            border-radius: 3px;
+            padding: 18px;
+            height: 54px;
+        }
+    }
+    .last {
+        display: flex;
+        align-items: flex-end;
+    }
+    .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
