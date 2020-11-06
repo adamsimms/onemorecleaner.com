@@ -1,6 +1,6 @@
 <?php
-$toEmail = "imhassan66@gmail.com";
-//$toEmail = "info@onemorecleaner.com";
+//$toEmail = "imhassan66@gmail.com";
+$toEmail = "adamsimms@gmail.com";
 
 
 $mailHeaders = "From:info@onemorecleaner.com\r\n";
