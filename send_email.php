@@ -1,7 +1,7 @@
 <?php
 //$toEmail = "imhassan66@gmail.com";
+//$toEmail = "info@onemorecleaner.com";
 $toEmail = "adamsimms@gmail.com";
-
 
 $mailHeaders = "From:info@onemorecleaner.com\r\n";
 $mailHeaders .= "MIME-Version: 1.0\r\n";

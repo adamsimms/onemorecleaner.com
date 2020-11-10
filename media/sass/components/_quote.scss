@@ -89,19 +89,52 @@
             margin-bottom: 10px;
             text-transform: uppercase;
         }
-        input {
+        .form-control {
             border-radius: 3px;
             padding: 18px;
             height: 54px;
+            color: rgba(37, 66, 95, 0.5);
+        }
+        select.form-control{
+            color: #25425F;
+            font-weight: bold;
+            padding-right: 0;
+            appearance: none;
+            padding-top: 14px;
+            position: relative;
+        }
+        &.arrow-down{
+            .icon-down-arrow{
+                position: absolute;
+                top: 55%;
+                color: #25425F;
+                right: 40px;
+                font-size: 20px;
+            }
         }
     }
     .last {
         display: flex;
         align-items: flex-end;
-        z-index: 9;
+        z-index: 9; 
     }
     .btn {
         width: 100%;
         margin-bottom: 1rem;
     }
 }
+
+
+
+::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: red;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: red;
+  }

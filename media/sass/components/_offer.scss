@@ -20,8 +20,15 @@
         bottom: -10px;
         right: 0;
         cursor: pointer;
+        transition: all ease 1s;
         &:hover {
-            background: #F5F4F2;
+            text-decoration: none;
+            transition: all ease 1s;
+            background: #25425F;
+            p,
+            .icon-right-arrow{
+                color: #fff;
+            }
         }
         @media (max-width: 767px) {
             right: 50%;
@@ -35,6 +42,9 @@
             line-height: 25px;
             color: #25425F;
             padding-right: 10px;
+        }
+        .icon-right-arrow{
+            color: #25425F;
         }
     }
 }

@@ -44,7 +44,7 @@
             line-height: 16px;
             letter-spacing: 0em;
             text-align: left;
-            color: #fff;
+            color: rgba($color: #fff, $alpha: 0.7);
             display: inline-block;
             @media (min-width: 768px) {
                 font-size: 12px;
