@@ -139,6 +139,15 @@ table {
 
 section {
     padding: 50px 0;
+    &.we-do {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        @media (min-width:769px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 }
 
 

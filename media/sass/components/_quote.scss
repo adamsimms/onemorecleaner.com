@@ -7,6 +7,7 @@
         padding-top: 150px;
         padding-bottom: 85px;
     }
+
     h2 {
         font-family: 'Teko', sans-serif;
         font-weight: 600;
@@ -42,7 +43,7 @@
             width: 100%;
             height: 40px;
             left: 0;
-            transform: rotate(2deg);
+            transform: rotate(1.5deg);
             background-color: #25425f;
             z-index: 1;
             border-bottom-left-radius: 10px;
@@ -104,12 +105,16 @@
             position: relative;
         }
         &.arrow-down{
+                
+           
             .icon-down-arrow{
                 position: absolute;
                 top: 55%;
                 color: #25425F;
                 right: 40px;
                 font-size: 20px;
+                display: none;
+                @media (min-width: 768px){display: block}
             }
         }
     }

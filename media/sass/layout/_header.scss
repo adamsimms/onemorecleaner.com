@@ -130,7 +130,7 @@
         }
     }
     .navbar-brand {
-        padding: 0;
+        padding: 6px 0 0 0;
         margin: 0;
         font-family: 'Teko', sans-serif;
         font-style: normal;
@@ -140,6 +140,7 @@
         letter-spacing: -0.01em;
         color: #FFFFFF;
         @media (min-width: 768px){
+            padding-top: 0;
             font-size: 64px;
             line-height: 92px;
         }
