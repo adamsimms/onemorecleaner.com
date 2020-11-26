@@ -12,8 +12,6 @@
 
 <body>
     <div class="main-wrapper">
-
-
         <!--header-->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -36,7 +34,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="navbar-brand" href="#">ONE MORE CLEANER</a>
+                <a class="navbar-brand" href="#">one more clea<i></i>er</a>
                 <div class="contact">
                     <a href="tel:514-222-0835"><i class="icon-telephone"></i>
                         <p>514-222-0835</p>

@@ -51,7 +51,13 @@
 }
 
 .navbar-expand-lg {
-  padding: 20px 30px;
+  padding: 20px 15px;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-lg {
+    padding: 20px 30px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -229,6 +235,16 @@
   line-height: 36px;
   letter-spacing: -0.01em;
   color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand i {
+  width: 22px;
+  height: 25px;
+  background: url(../images/vaccum.png) 0 0 no-repeat;
+  display: inline-block;
+  background-size: contain;
+  margin-left: 2px;
 }
 
 @media (min-width: 768px) {
@@ -237,10 +253,22 @@
     font-size: 64px;
     line-height: 92px;
   }
+  .navbar-light .navbar-brand i {
+    width: 35px;
+    height: 42px;
+    background: url(../images/vaccum.png) 0 0 no-repeat;
+    display: inline-block;
+    background-size: contain;
+  }
 }
 
 .navbar-light .navbar-brand:hover {
-  color: #fff;
+  color: #25425F;
+}
+
+.navbar-light .navbar-brand:hover i {
+  background: url("../images/vaccum-hover.png") 0 0 no-repeat;
+  background-size: contain;
 }
 
 .footer {
@@ -286,6 +314,11 @@
     font-size: 24px;
     line-height: 82.9%;
   }
+}
+
+.footer .user-email a:hover {
+  color: #25425F;
+  text-decoration: none;
 }
 
 .footer .reserved {
@@ -359,6 +392,11 @@
 
 .footer .facebook a img {
   padding-right: 10px;
+}
+
+.footer .facebook a:hover {
+  color: #25425F;
+  text-decoration: none;
 }
 
 html,
@@ -1091,7 +1129,7 @@ section.we-do {
 
 .offer-info .offer-details:hover p,
 .offer-info .offer-details:hover .icon-right-arrow {
-  color: #fff;
+  color: #EF6E43;
 }
 
 @media (max-width: 767px) {
@@ -1124,6 +1162,7 @@ section.we-do {
   color: #FFFFFF;
   text-align: center;
   padding-bottom: 40px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {

@@ -27,7 +27,7 @@
             background: #25425F;
             p,
             .icon-right-arrow{
-                color: #fff;
+                color: #EF6E43
             }
         }
         @media (max-width: 767px) {
@@ -58,6 +58,7 @@
         color: #FFFFFF;
         text-align: center;
         padding-bottom: 40px;
+        text-transform: uppercase;
         @media (max-width: 767px) {
             font-size: 32px;
         }
