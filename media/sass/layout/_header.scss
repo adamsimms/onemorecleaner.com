@@ -144,7 +144,7 @@
         i { 
             width: 22px;
             height: 25px;
-            background: url(../images/vaccum.png) 0 0 no-repeat;
+            background: url("../images/vaccum.svg") 0 0 no-repeat;
             display: inline-block;
             background-size: contain;
             margin-left: 2px;
@@ -156,7 +156,7 @@
             i { 
                 width: 35px;
                 height: 42px;
-                background: url(../images/vaccum.png) 0 0 no-repeat;
+                background: url("../images/vaccum.svg") 0 0 no-repeat;
                 display: inline-block;
                 background-size: contain;
             }
@@ -164,7 +164,7 @@
         &:hover{
             color: #25425F;
             i { 
-                background: url('../images/vaccum-hover.png') 0 0 no-repeat; 
+                background: url('../images/vaccum-hover.svg') 0 0 no-repeat; 
                 background-size: contain;
             }
         }

@@ -14,7 +14,7 @@
               </div>
               <div class="col-md-4">
                   <div class="facebook">
-                      <a href="#"><img src="media/images/facebook.png" alt="facebook"> LIKE US ON FACEBOOK</a>
+                  <a href="#"><i></i> LIKE US ON FACEBOOK</a>
                   </div>
               </div>
           </div>
@@ -29,6 +29,10 @@
 
 
   <script>
+
+$('<img src="media/images/vaccum.svg"/>');
+$('<img src="media/images/vaccum-hover.svg"/>');
+
       function sendEmail() {
 
           var data = {
