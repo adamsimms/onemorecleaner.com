@@ -249,7 +249,9 @@
         justify-content: center;
         font-size: 20px; } }
     .footer .facebook a img {
-      padding-right: 10px; }
+      padding-right: 10px;
+      position: relative;
+      top: -3px; */}
     .footer .facebook a:hover {
       color: #25425F;
       text-decoration: none; }
@@ -448,7 +450,7 @@ section {
         max-width: inherit; } }
 
 .hero-intro {
-  height: 77vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -494,7 +496,6 @@ section {
 
 @media (min-width: 768px) {
   .quote-section {
-    padding-top: 150px;
     padding-bottom: 85px; } }
 .quote-section h2 {
   font-family: 'Teko', sans-serif;
@@ -505,7 +506,7 @@ section {
   margin-bottom: 30px; }
   @media (min-width: 768px) {
     .quote-section h2 {
-      font-size: 72px;
+      font-size: 56px;
       line-height: 82.9%; } }
 .quote-section div {
   color: #F5F4F2; }
@@ -622,7 +623,7 @@ section {
 .we-do h2 {
   font-family: 'Teko', sans-serif;
   font-weight: 600;
-  font-size: 72px;
+  font-size: 56px;
   line-height: 82.9%;
   color: #FFFFFF;
   text-align: left;
@@ -671,7 +672,7 @@ section {
     font-size: 32px; }
     @media (min-width: 767px) {
       .works h2 {
-        font-size: 72px;
+        font-size: 56px;
         line-height: 82%;
         text-align: left; } }
   .works .how-it-works {
@@ -752,7 +753,7 @@ section {
     background: #FFFFFF;
     box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.18);
     border-radius: 5px;
-    padding: 16px;
+    padding: 12px;
     position: absolute;
     bottom: -10px;
     right: 0;
@@ -773,7 +774,7 @@ section {
     .offer-info .offer-details p {
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
-      font-size: 21px;
+      font-size: 20px;
       line-height: 25px;
       color: #25425F;
       padding-right: 10px; }
@@ -783,15 +784,22 @@ section {
 .offers h2 {
   font-family: 'Teko', sans-serif;
   font-weight: 600;
-  font-size: 72px;
+  font-size: 56px;
   line-height: 82.9%;
   color: #FFFFFF;
-  text-align: center;
+  text-align: left;
   padding-bottom: 40px;
   text-transform: uppercase; }
   @media (max-width: 767px) {
     .offers h2 {
       font-size: 32px; } }
+
+.offers p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;}
 
 .customer-wrapper {
   background: #25425F;
@@ -819,7 +827,7 @@ section {
       margin-bottom: 15px; }
       @media (min-width: 768px) {
         .customer-wrapper .customer-info h3 {
-          font-size: 48px; } }
+          font-size: 36px; } }
     .customer-wrapper .customer-info p {
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
@@ -830,6 +838,6 @@ section {
       padding: 0 20px; }
       @media (min-width: 768px) {
         .customer-wrapper .customer-info p {
-          font-size: 18px; } }
+          font-size: 16px; } }
 
 /*# sourceMappingURL=main.css.map */
