@@ -1,65 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$meta_page_title = "ONE MORE CLEANER - Montreal's Best House Cleaner";
+$meta_keywords = "house, cleaning, services, montreal, residential, deep, spring, company";
+$meta_description = "Quality house and residential cleaning services in Montreal.";
+$nav_active = "house";
 
-<head>
-    <title>ONE MORE CLEANER - Montreal's Best House Cleaner</title>
+require_once("../header_inc.php")
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="house, cleaning, services, montreal, residential, deep, spring, company"/>
-    <meta name="description" content="Quality house and residential cleaning services in Montreal."/>
-    <meta name="copyright"content="ONE MORE CLEANER">
-    <meta name="language" content="EN">
-    <meta name="robots" content="index,follow" />
-    <meta name="revised" content="Monday, Decemember 14th, 2020, 8:00 am" />
-    <meta name="Classification" content="Business">
-    <meta name="author" content="ONE MORE CLEANER, info@onemorecleaner.com">
-    <meta name="designer" content="Adam Simms, hello@adamsim.ms">
-    <meta name="reply-to" content="info@onemorecleaner.com">
-    <meta name="url" content="http://www.onemorecleaner.com">
-    <meta name="identifier-URL" content="http://www.onemorecleaner.com">
-    <meta name="coverage" content="Worldwide">
-    <meta name="distribution" content="Global">
-    <meta name="revisit-after" content="28 days">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../media/sass/main.css">
-</head>
-
-<body>
-    <div class="main-wrapper">
-        <!--header-->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="http://www.onemorecleaner.com/demo/house-cleaning-services-montreal/">House</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://www.onemorecleaner.com/demo/office-cleaning-montreal/">Office</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://www.onemorecleaner.com/demo/deep-steam-cleaning-services-montreal/">Steam</a>
-                        </li>
-                    </ul>
-                </div>
-                <a class="navbar-brand" href="http://www.onemorecleaner.com/demo/">one more clea<i></i>er</a>
-                <div class="contact">
-                    <a href="tel:514-222-0835"><i class="icon-telephone"></i>
-                        <p>514-222-0835</p>
-                    </a>
-                </div>
-            </div>
-
-        </nav>
+?>
 
 <!--hero bannner-->
 <section class="hero-banner">
@@ -74,7 +21,7 @@
         </div>
       </div>
       <div class="hero-img">
-        <img src="../media/images/illustration.png" alt="illustration" class="img-fluid">
+        <img src="<?php echo $base_url; ?>media/images/illustration.png" alt="illustration" class="img-fluid">
       </div>
     </div>
   </div>
@@ -83,7 +30,7 @@
 <!--Quote-->
 <section class="quote-section">
   <div class="container">
-    <img src="../media/images/background-bubbles.png" alt="background-bubbles">
+    <img src="<?php echo $base_url; ?>media/images/background-bubbles.png" alt="background-bubbles">
     <span id="form_container">
       <div class="row">
         <div class="col-12">
@@ -169,15 +116,15 @@
     </div>
     <div class="row">
       <ul class="how-it-works">
-        <li class="first-step"><img src="../media/images/works-1.png" alt="Give us a call" class="img-fluid">
+        <li class="first-step"><img src="<?php echo $base_url; ?>media/images/works-1.png" alt="Give us a call" class="img-fluid">
           <p>Give us a call to learn how we can be of help and schedule a visit to your home.</p>
         </li>
         <li class="second-step">
-          <img src="../media/images/works-2.png" alt="visit your home" class="img-fluid">
+          <img src="<?php echo $base_url; ?>media/images/works-2.png" alt="visit your home" class="img-fluid">
           <p>We visit your home and assess what best suits your needs, and offer a quote.</p>
         </li>
         <li class="third-step">
-          <img src="../media/images/works-3.png" alt="cleaning" class="img-fluid">
+          <img src="<?php echo $base_url; ?>media/images/works-3.png" alt="cleaning" class="img-fluid">
           <p>We complete your first cleaning to your satisfaction.</p>
         </li>
       </ul>
@@ -191,12 +138,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-lg-4">
-            <h2>ADDITONAL SERVICES</h2>
-            <p>We pride ourselves in offering our clients a squeaky clean peace of mind as Montreal’s best home cleaner. We arrive on time to get the job done, professionally taking care of your home, from top to bottom. We also offer exceptional services such as steam cleaning as well as office cleaning solutions.</p>
+        <h2>ADDITONAL SERVICES</h2>
+        <p>We pride ourselves in offering our clients a squeaky clean peace of mind as Montreal’s best home cleaner. We arrive on time to get the job done, professionally taking care of your home, from top to bottom. We also offer exceptional services such as steam cleaning as well as office cleaning solutions.</p>
       </div>
       <div class="col-md-4 col-lg-4">
         <div class="offer-info">
-          <img src="../media/images/illustration (2).png" alt="illustration" class="img-fluid">
+          <img src="<?php echo $base_url; ?>media/images/illustration (2).png" alt="illustration" class="img-fluid">
           <a class="offer-details" href="http://www.onemorecleaner.com/demo/office-cleaning-montreal/">
             <p>OFFICE CLEANING</p>
             <i class="icon-right-arrow"></i>
@@ -205,7 +152,7 @@
       </div>
       <div class="col-md-4 col-lg-4">
         <div class="offer-info">
-          <img src="../media/images/illustration (3).png" alt="illustration" class="img-fluid">
+          <img src="<?php echo $base_url; ?>media/images/illustration (3).png" alt="illustration" class="img-fluid">
           <a class="offer-details" href="http://www.onemorecleaner.com/demo/deep-steam-cleaning-services-montreal/">
             <p>STEAM CLEANING</p>
             <i class="icon-right-arrow"></i>

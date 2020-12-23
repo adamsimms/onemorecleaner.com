@@ -30,8 +30,8 @@
 
   <script>
 
-$('<img src="media/images/vaccum.svg"/>');
-$('<img src="media/images/vaccum-hover.svg"/>');
+$('<img src="<?php echo $base_url; ?>media/images/vaccum.svg"/>');
+$('<img src="<?php echo $base_url; ?>media/images/vaccum-hover.svg"/>');
 
       function sendEmail() {
 
