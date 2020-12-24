@@ -42,6 +42,7 @@
             line-height: 25px;
             color: #25425F;
             padding-right: 10px;
+            margin-bottom: 0;
         }
         .icon-right-arrow{
             color: #25425F;
@@ -56,18 +57,18 @@
         font-size: 56px;
         line-height: 82.9%;
         color: #FFFFFF;
-        text-align: center;
         padding-bottom: 40px;
         text-transform: uppercase;
         @media (max-width: 767px) {
             font-size: 32px;
         }
     }
-    p{
+    p {
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
         color: #fff;
+        margin-bottom: 30px;
     }
 }

@@ -75,7 +75,7 @@
             letter-spacing: 0em;
             text-align: left;
             color: #F5F4F2;
-            
+
             @media (max-width: 991px) {
                 font-size: 14px;
             }
@@ -93,11 +93,13 @@
                     background: url("../images/facebook-hover.png") 0 0 no-repeat;
                 }
             }
-            i{
+            i {
                 background: url("../images/facebook.png") 0 0 no-repeat;
                 width: 30px;
                 height: 30px;
                 margin-right: 10px;
+                position: relative;
+                top: -3px;
             }
         }
     }
