@@ -77,7 +77,7 @@ require_once("../header_inc.php")
     <div class="row">
       <div class="col-md-8">
         <h2>ROOMS, KITCHENS & MORE</h2>
-        <P>Providing a vast array of residential cleaning services, One More Cleaner is a turnkey cleaning solution for your home. Dusty surfaces like window sills, blinds, baseboards and those hard to reach cobwebs, we take care of those. Dirty floors are no more once we are done with them! We vacuum and mop all floors, even in those hard to reach places like under the bed (but we can’t don’t anything about monsters). </P>
+        <P>Providing a vast array of residential cleaning services, One More Cleaner is a turnkey cleaning solution for your home. Dusty surfaces like window sills, blinds, baseboards and those hard to reach cobwebs, we take care of those. Dirty floors are no more once we are done with them! We vacuum and mop all floors, even in those hard to reach places like under the bed (but we can’t do anything about monsters). </P>
         <P>Offering deep cleaning for your entire home, we take care to wash down the outsides of cupboards, appliances (except for the microwave–we will get in there and make sure it’s ready to go) and vanities in any room you wish. We ensure that your backsplash, countertops, sinks, faucets and taps are spic and span. We take special care of your bathrooms, too, leaving the sink, toilet, bathtub, wall tiles and mirrors looking shiny and new!</P>
         <P>On top of all that, we clean laundry and remove garbage while we’re there. There’s a reason why they call us Montreal’s best house cleaning service–it’s like a fresh spring cleaning every time we’re there!</P>
       </div>
