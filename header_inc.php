@@ -25,6 +25,19 @@ $base_url = "http://onemorecleaner.com/demo/";
     <meta name="distribution" content="Global">
     <meta name="revisit-after" content="28 days">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $base_url; ?>media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $base_url; ?>media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $base_url; ?>media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo $base_url; ?>media/favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?php echo $base_url; ?>media/favicon/safari-pinned-tab.svg" color="#ef6e43">
+    <link rel="shortcut icon" href="<?php echo $base_url; ?>media/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="ONEMORECLEANER">
+    <meta name="application-name" content="ONEMORECLEANER">
+    <meta name="msapplication-TileColor" content="#ef6e43">
+    <meta name="msapplication-config" content="<?php echo $base_url; ?>media/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ef6e43">
+
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo $base_url; ?>media/sass/main.css">
