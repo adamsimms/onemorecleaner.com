@@ -112,6 +112,26 @@ require_once("header_inc.php")
   </div>
 </section>
 
+<!--Ask about-->
+<section class="ask-about-deep-steam">
+  <div class="row">
+    <div class="container">
+      <div class="pos-relative">
+        <div class="deep-steam-content-container">
+          <img src="media/images/bg-deep-stream.png" alt="Deep steam cleaning services" />
+          <div class="deep-steam-content">
+            <h3>Ask about our</h3>
+            <h2>Deep Stream Cleaning Service</h2>
+            <p>Clean, disinfect, sanitize, and deodorise any surface. Stream cleaning excels at any heavy-duty cleaning tasks such as floor, grout and tile cleaning. For a particularly grimy surface, a burst of ecologic detergent into the steam dislodges grease, dirt and stains.</p>
+            <p>Superheated steam kills up 99.9% of bacteria, germs and viruses. Quickly disinfect floors, carpets, countertops, slicers, kitchen equipment, bathrooms and more.</p>
+            <p>Our steam cleaning service is the optimal solution for a germ-free environment with better cleaning results in less time!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!--customer-->
 <section class="customer-wrapper">
   <div class="container">
