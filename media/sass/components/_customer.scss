@@ -71,11 +71,13 @@
       content: "";
       position: absolute;
       top: -26px;
-      width: 102%;
+      width: 105%;
       height: 60px;
       background-color: #ef6e43;
-      left: 0;
-      transform: rotate(-1deg);
+      left: -15px;
+      transform: rotate(
+  -3deg
+  );
     }
     @media (min-width: 1024px) { 
       border-radius: 30px; 
