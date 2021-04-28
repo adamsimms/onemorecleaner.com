@@ -10,7 +10,7 @@
         font-size: 16px;
         line-height: 22px;
         color: #fff;
-        margin-bottom: 40px; 
+        margin-bottom: 40px;
     }
 
     h2 {
@@ -34,13 +34,15 @@
         font-style: normal;
         font-weight: 700;
         text-align: left;
-        color: #FFF;
-        margin-top: 50px;
-        margin-bottom: 10px;
-        @media (min-width:768px) { margin-top: 0; }
+        color: #FFF;  
+        margin-top: 0;
+        margin-bottom: 26px;
     }
+
     ul {
-        margin-left: 15px;
+        background: #BF5836;
+        padding: 30px 30px 30px 50px;
+        border-radius: 12px;
     }
     li {
         list-style-type: disc;
