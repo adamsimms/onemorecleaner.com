@@ -77,28 +77,25 @@ require_once("../header_inc.php")
     <div class="row">
       <div class="col-md-8">
         <h2>ROOMS, KITCHENS & MORE</h2>
-        <P>Providing a vast array of residential cleaning services, One More Cleaner is a turnkey cleaning solution for your home. Dusty surfaces like window sills, blinds, baseboards and those hard to reach cobwebs, we take care of those. Dirty floors are no more once we are done with them! We vacuum and mop all floors, even in those hard to reach places like under the bed (but we can’t do anything about monsters). </P>
+        <P>Providing a vast array of residential cleaning services, One More Cleaner is a turnkey cleaning solution for your home. Dusty surfaces like window sills, blinds, baseboards and those hard to reach cobwebs, we take care of those. Dirty floors are no more once we are done with them! We vacuum and mop all floors, even in those hard to reach places like under the bed (but we can’t do anything about monsters).</P>
         <P>Offering deep cleaning for your entire home, we take care to wash down the outsides of cupboards, appliances (except for the microwave–we will get in there and make sure it’s ready to go) and vanities in any room you wish. We ensure that your backsplash, countertops, sinks, faucets and taps are spic and span. We take special care of your bathrooms, too, leaving the sink, toilet, bathtub, wall tiles and mirrors looking shiny and new!</P>
         <P>On top of all that, we clean laundry and remove garbage while we’re there. There’s a reason why they call us Montreal’s best house cleaning service–it’s like a fresh spring cleaning every time we’re there!</P>
       </div>
       <div class="col-md-4">
         <h5>We also offer detailed services:</h5>
         <ul>
-          <li>Carefully cleaning wooden trims and doors</li>
-          <li>Clean cabinets–inside and out</li>
-          <li>Spot cleaning of walls</li>
-          <li>Wall washdowns and ceiling cleaning</li>
-          <li>Clean fridge and stove - inside and out</li>
-          <li>Laundry and ironing</li>
-          <li>Silver polishing</li>
-          <li>Deep cleaning of bathroom grout</li>
-          <li>Dusting of light fixtures and ceiling fans</li>
-          <li>Changing bed linens</li>
-          <li>Wipe blinds with a damp cloth</li>
-          <li>Wash interior window sills, frames and baseboards</li>
-          <li>Interior window cleaning</li>
-          <li>Vacuum sofas, chairs, curtains and cushions</li>
-          <li>Wash interior doors and frames</li>
+          <li>Carefully cleaning wooden trims and doors.</li>
+          <li>Clean cabinets–inside and out.</li>
+          <li>Spot cleaning of walls.</li>
+          <li>Wall washdowns and ceiling cleaning.</li>
+          <li>Clean fridge and stove - inside and out.</li>
+          <li>Deep cleaning of bathroom grout.</li>
+          <li>Dusting of light fixtures and ceiling fans.</li>
+          <li>Changing bed linens.</li>
+          <li>Wipe blinds with a damp cloth.</li>
+          <li>Wash interior window sills, frames and baseboards.</li>
+          <li>Vacuum sofas, chairs, curtains and cushions.</li>
+          <li>Wash interior doors and frames.</li>
         </ul>
 
       </div>
@@ -133,35 +130,26 @@ require_once("../header_inc.php")
   </div>
 </section>
 
-<!--we offer-->
-<section class="offers">
+
+<!--ask about-->
+<section class="ask-about-deep-steam">
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-lg-4">
-        <h2>ADDITONAL SERVICES</h2>
-        <p>We pride ourselves in offering our clients a squeaky clean peace of mind as Montreal’s best home cleaner. We arrive on time to get the job done, professionally taking care of your home, from top to bottom. We also offer exceptional services such as steam cleaning as well as office cleaning solutions.</p>
+          <img src="<?php echo $base_url; ?>/media/images/bg-deep-stream.png" alt="Deep steam cleaning services" class="img-fluid">
       </div>
-      <div class="col-md-4 col-lg-4">
-        <div class="offer-info">
-          <img src="<?php echo $base_url; ?>media/images/illustration (2).png" alt="illustration" class="img-fluid">
-          <a class="offer-details" href="http://www.onemorecleaner.com/demo/office-cleaning-montreal/">
-            <p>OFFICE CLEANING</p>
-            <i class="icon-right-arrow"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4 col-lg-4">
-        <div class="offer-info">
-          <img src="<?php echo $base_url; ?>media/images/illustration (3).png" alt="illustration" class="img-fluid">
-          <a class="offer-details" href="http://www.onemorecleaner.com/demo/deep-steam-cleaning-services-montreal/">
-            <p>STEAM CLEANING</p>
-            <i class="icon-right-arrow"></i>
-          </a>
-        </div>
+      <div class="col-md-8 col-lg-8">
+          <h3>Ask about our</h3>
+          <h2>Deep Steam Cleaning Service</h2>
+          <p>Clean, disinfect, sanitize, and deodorise any surface. Stream cleaning excels at any heavy-duty cleaning tasks such as floor, grout and tile cleaning. For a particularly grimy surface, a burst of ecologic detergent into the steam dislodges grease, dirt and stains.</p>
+          <p>Superheated steam kills up 99.9% of bacteria, germs and viruses. Superheated steam kills up to 99.9% of bacteria, germs and viruses. Quickly disinfect floors, carpets, countertops, slicers, kitchen equipment, bathrooms and more.</p>
+          <p>Our steam cleaning service is the optimal solution for a germ-free environment with better cleaning results in less time!</p>
+
       </div>
     </div>
   </div>
 </section>
+
 
 <!--customer-->
 <section class="customer-wrapper">
