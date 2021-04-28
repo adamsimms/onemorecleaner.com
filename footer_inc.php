@@ -9,7 +9,7 @@
               </div>
               <div class="col-md-4">
                   <div class="reserved">
-                      <p>© 2020 One More Cleaner. All Rights Reserved.</p>
+                      <p>©<?php echo date("Y"); ?> One More Cleaner.</p>
                   </div>
               </div>
               <div class="col-md-4">
