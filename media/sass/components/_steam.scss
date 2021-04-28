@@ -1,0 +1,92 @@
+.ask-about-deep-steam {
+
+  .container {
+      background: #DAF1F7;
+      padding: 66px 50px 30px;
+      position: relative;
+      @media (min-width: 768px) {
+          border-bottom-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-top-left-radius: 80px;
+      }
+      @media (min-width: 992px) {
+          border-top-left-radius: 0;
+      }
+      &:before{
+          content: "";
+          position: absolute;
+          top: -7px;
+          width: auto;
+          height: 40px;
+          left: -2px;
+          transform: rotate(-1.5deg);
+          background-color: #DAF1F7;
+          z-index: 1;
+          border-bottom-right-radius: 10px;
+          @media (min-width: 768px){
+              width: 100.15%;
+              height: 60px;
+              right: 0px;
+              transform: rotate(-3deg);
+              border-top-right-radius: 40px;
+              border-top-left-radius: 40px;
+          }
+          @media (min-width: 992px){
+              height: 60px;
+          }
+      }
+      &:after{
+          content: "";
+          position: absolute;
+          top: -26px;
+          width: 102%;
+          height: 60px;
+          background-color: #ef6e43;
+          right: 0;
+          transform: rotate(-2deg);
+      }
+
+      img {margin-top: 6px;}
+  }
+
+  h2 {
+    font-family: "Teko", sans-serif;
+    font-size: 48px;
+    line-height: 82.9%;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0em;
+    margin-bottom: 15px;
+    color: #25425F;
+    text-align: center;
+    text-transform: uppercase;
+    @media (min-width: 1024px) {
+      text-align: left;
+    }
+  }
+  h3 {
+    font-family: "Caveat", cursive;
+    font-size: 28px;
+    line-height: 35px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    color: #25425F;
+    text-align: center;
+    margin-bottom: 10px;
+    @media (min-width: 1024px) {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    padding: 15px 0;
+    color: #25425F;
+  }
+}
