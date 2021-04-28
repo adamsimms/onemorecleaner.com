@@ -77,23 +77,22 @@ require_once("../header_inc.php")
       <div class="col-md-8">
         <h2>FROM BOARDROOMS TO BREAKROOMS</h2>
         <P>Offices come in all shapes and sizes but as Montreal’s best office cleaner, we offer your company an all-in-one cleaning solution that is tailored to fit your needs. From dusting and sanitizing work surfaces in meeting rooms and individual workspaces to rug and carpet cleaning, we take extra care so your employees come to work in a safe and clean environment.</P>
-        <P>Offering deep cleaning services for your entire office, especially the break room and kitchen. We take care to wash down the outsides of cupboards and appliances (exceptt for the microwave - we will get in there and make sure it’s cleaned and ready fuel your employees) while ensuring that countertops, sinks, faucets and taps are spic and span. We take special care of your employees' bathrooms as well, leaving the sinks, toilets, urinals, wall tiles and mirrors looking shiny and new!</P>
-        <P>On top of all that, we empty the recycling and waste bins and remove garbage while we’re there. There’s a reason why they call us Montreal’s best office cleaning service - We do our best work in your office so you can do yours!</P>
+        <P>Offering deep cleaning services for your entire office, especially the break room and kitchen. We take care to wash down the outsides of cupboards and appliances (except for the microwave - we will get in there and make sure it’s cleaned and ready to fuel your employees) while ensuring that countertops, sinks, faucets and taps are spic and span. We take special care of your employees' bathrooms as well, leaving the sinks, toilets, urinals, wall tiles and mirrors looking shiny and new!</P>
+        <P>On top of all that, we empty the recycling and waste bins and remove the garbage while we’re there. There’s a reason why they call us Montreal’s best office cleaning service - We do our best work in your office so you can do yours!</P>
       </div>
       <div class="col-md-4">
-        <h5>We also offer extensive detailed services:</h5>
+        <h5>We also offer detailed services:</h5>
         <ul>
-          <li>Loading, cleaning and emptying the office dishwasher</li>
-          <li>Clean cabinets–inside and out</li>
-          <li>Spot cleaning of walls</li>
-          <li>Wall washdowns and ceiling cleaning</li>
-          <li>Clean fridge and stove - inside and out</li>
-          <li>Dusting of light fixtures and ceiling fans</li>
-          <li>Wipe blinds with a damp cloth</li>
-          <li>Wash interior window sills, frames and baseboards</li>
-          <li>Interior window cleaning</li>
-          <li>Vacuum sofas, chairs, curtains and cushions</li>
-          <li>Wash interior doors and frames</li>
+          <li>Loading, cleaning and emptying the office dishwasher.</li>
+          <li>Clean cabinets–inside and out.</li>
+          <li>Spot cleaning of walls.</li>
+          <li>Wall washdowns and ceiling cleaning.</li>
+          <li>Clean fridge and stove - inside and out.</li>
+          <li>Dusting of light fixtures and ceiling fans.</li>
+          <li>Wipe blinds with a damp cloth.</li>
+          <li>Wash interior window sills, frames and baseboards.</li>
+          <li>Vacuum sofas, chairs, curtains and cushions.</li>
+          <li>Wash interior doors and frames.</li>
         </ul>
 
       </div>
@@ -124,35 +123,23 @@ require_once("../header_inc.php")
         </li>
       </ul>
     </div>
-
   </div>
 </section>
 
-<!--we offer-->
-<section class="offers">
+<!--ask about-->
+<section class="ask-about-deep-steam">
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-lg-4">
-        <h2>ADDITONAL SERVICES</h2>
-        <p>We pride ourselves in offering our clients a clean peace of mind as Montreal’s best cleaner. We arrive on time to get the job done, professionally taking care of your office cleaning needs. We also offer exceptional services such as steam cleaning as well as house cleaning solutions. </p>
+          <img src="<?php echo $base_url; ?>/media/images/bg-deep-stream.png" alt="Deep steam cleaning services" class="img-fluid">
       </div>
-      <div class="col-md-4 col-lg-4">
-        <div class="offer-info">
-          <img src="<?php echo $base_url; ?>media/images/illustration (1).png" alt="illustration" class="img-fluid">
-          <a class="offer-details" href="http://www.onemorecleaner.com/demo/house-cleaning-services-montreal/">
-            <p>HOUSE CLEANING</p>
-            <i class="icon-right-arrow"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4 col-lg-4">
-        <div class="offer-info">
-          <img src="<?php echo $base_url; ?>media/images/illustration (3).png" alt="illustration" class="img-fluid">
-          <a class="offer-details" href="http://www.onemorecleaner.com/demo/deep-steam-cleaning-services-montreal/">
-            <p>STEAM CLEANING</p>
-            <i class="icon-right-arrow"></i>
-          </a>
-        </div>
+      <div class="col-md-8 col-lg-8">
+          <h3>Ask about our</h3>
+          <h2>Deep Steam Cleaning Service</h2>
+          <p>Clean, disinfect, sanitize, and deodorise any surface. Stream cleaning excels at any heavy-duty cleaning tasks such as floor, grout and tile cleaning. For a particularly grimy surface, a burst of ecologic detergent into the steam dislodges grease, dirt and stains.</p>
+          <p>Superheated steam kills up 99.9% of bacteria, germs and viruses. Superheated steam kills up to 99.9% of bacteria, germs and viruses. Quickly disinfect floors, carpets, countertops, slicers, kitchen equipment, bathrooms and more.</p>
+          <p>Our steam cleaning service is the optimal solution for a germ-free environment with better cleaning results in less time!</p>
+
       </div>
     </div>
   </div>
