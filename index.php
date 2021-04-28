@@ -76,15 +76,14 @@ require_once("header_inc.php")
 <section class="offers">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h2>We Offer</h2>
+      <div class="col-md-4 col-lg-4">
+        <h2>WE OFFER</h2>
+        <p>We pride ourselves in offering our clients a squeaky clean peace of mind as Montreal’s best cleaner. We arrive on time to get the job done, professionally taking care of your home, from top to bottom. We offer exceptional house, office, and deep steam cleaning solutions to meet all your cleaning needs.</p>
       </div>
-    </div>
-    <div class="row">
       <div class="col-md-4 col-lg-4">
         <div class="offer-info">
           <img src="<?php echo $base_url; ?>media/images/illustration (1).png" alt="illustration" class="img-fluid">
-          <a class="offer-details" href="house-cleaning-services-montreal">
+          <a class="offer-details" href="http://www.onemorecleaner.com/demo/house-cleaning-services-montreal/">
             <p>HOUSE CLEANING</p>
             <i class="icon-right-arrow"></i>
           </a>
@@ -93,17 +92,8 @@ require_once("header_inc.php")
       <div class="col-md-4 col-lg-4">
         <div class="offer-info">
           <img src="<?php echo $base_url; ?>media/images/illustration (2).png" alt="illustration" class="img-fluid">
-          <a class="offer-details" href="office-cleaning-montreal">
+          <a class="offer-details" href="http://www.onemorecleaner.com/demo/office-cleaning-montreal/">
             <p>OFFICE CLEANING</p>
-            <i class="icon-right-arrow"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4 col-lg-4">
-        <div class="offer-info">
-          <img src="<?php echo $base_url; ?>media/images/illustration (3).png" alt="illustration" class="img-fluid">
-          <a class="offer-details" href="deep-steam-cleaning-services-montreal">
-            <p>STEAM CLEANING</p>
             <i class="icon-right-arrow"></i>
           </a>
         </div>
@@ -112,21 +102,20 @@ require_once("header_inc.php")
   </div>
 </section>
 
-<!--Ask about-->
+<!--ask about-->
 <section class="ask-about-deep-steam">
-  <div class="row">
-    <div class="container">
-      <div class="pos-relative">
-        <div class="deep-steam-content-container">
-          <img src="media/images/bg-deep-stream.png" alt="Deep steam cleaning services" />
-          <div class="deep-steam-content">
-            <h3>Ask about our</h3>
-            <h2>Deep Stream Cleaning Service</h2>
-            <p>Clean, disinfect, sanitize, and deodorise any surface. Stream cleaning excels at any heavy-duty cleaning tasks such as floor, grout and tile cleaning. For a particularly grimy surface, a burst of ecologic detergent into the steam dislodges grease, dirt and stains.</p>
-            <p>Superheated steam kills up 99.9% of bacteria, germs and viruses. Quickly disinfect floors, carpets, countertops, slicers, kitchen equipment, bathrooms and more.</p>
-            <p>Our steam cleaning service is the optimal solution for a germ-free environment with better cleaning results in less time!</p>
-          </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-lg-4">
+          <img src="<?php echo $base_url; ?>/media/images/bg-deep-stream.png" alt="Deep steam cleaning services" class="img-fluid">
+      </div>
+      <div class="col-md-8 col-lg-8">
+          <h3>Ask about our</h3>
+          <h2>Deep Steam Cleaning Service</h2>
+          <p>Clean, disinfect, sanitize, and deodorise any surface. Stream cleaning excels at any heavy-duty cleaning tasks such as floor, grout and tile cleaning. For a particularly grimy surface, a burst of ecologic detergent into the steam dislodges grease, dirt and stains.</p>
+          <p>Superheated steam kills up 99.9% of bacteria, germs and viruses. Superheated steam kills up to 99.9% of bacteria, germs and viruses. Quickly disinfect floors, carpets, countertops, slicers, kitchen equipment, bathrooms and more.</p>
+          <p>Our steam cleaning service is the optimal solution for a germ-free environment with better cleaning results in less time!</p>
+
       </div>
     </div>
   </div>
