@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
 
 //header css
+
+.banner {
+  background: #1B3045;
+  padding: 15px 0;
+  color: #FFFFFF;
+  text-align: center;
+
+  span {
+    color: #EF6E43;
+    font-weight: bold;
+  }
+}
+
 .navbar-expand-lg {
     padding: 20px 15px;
     @media (min-width: 768px) { padding: 20px 30px; }
@@ -25,7 +38,7 @@
                 &:after{
                     transform: translate3d(-8px,0,0) rotate(45deg) scaleX(.7);
                 }
-            }    
+            }
         }
         &:focus {
             outline: none;
@@ -152,7 +165,7 @@
                     transition: all ease 0.5s;
                     border-bottom: 4px solid #25425F;
                     color: #25425F;
-                }  
+                }
             }
             .nav-link {
                 color: #fff;
@@ -163,7 +176,7 @@
             }
         }
     }
-    
+
     .contact {
         a {
             display: block;
@@ -191,7 +204,7 @@
         letter-spacing: -0.01em;
         color: #FFFFFF;
         text-transform: uppercase;
-        i { 
+        i {
             width: 22px;
             height: 25px;
             background: url("../images/vaccum.svg") 0 0 no-repeat;
@@ -203,7 +216,7 @@
             padding-top: 0;
             font-size: 64px;
             line-height: 92px;
-            i { 
+            i {
                 width: 35px;
                 height: 42px;
                 background: url("../images/vaccum.svg") 0 0 no-repeat;
@@ -213,12 +226,10 @@
         }
         &:hover{
             color: #25425F;
-            i { 
-                background: url('../images/vaccum-hover.svg') 0 0 no-repeat; 
+            i {
+                background: url('../images/vaccum-hover.svg') 0 0 no-repeat;
                 background-size: contain;
             }
         }
     }
 }
-
-
