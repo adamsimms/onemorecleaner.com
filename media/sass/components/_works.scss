@@ -3,9 +3,9 @@
 //offer css
 
 .works {
-  
+
   text-align: center;
-  
+
   p {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -13,9 +13,9 @@
     line-height: 19px;
     color: #fff;
     width: 220px;
-    
+
   }
-  
+
   h2 {
     font-family: 'Teko', sans-serif;
     font-weight: 600;
@@ -23,15 +23,15 @@
     text-align: left;
     padding-bottom: 40px;
     text-align: center;
-    font-size: 56px;
-    
+    font-size: 48px;
+
     @media (min-width: 767px) {
-      font-size: 72px;
+      font-size: 48px;
       line-height: 82%;
       text-align: left;
     }
   }
-  
+
   .how-it-works {
     padding: 0 15px;
     width: 100%;
@@ -40,14 +40,14 @@
       justify-content: space-between;
     }
     li {
-      margin-bottom: 100px;
+      margin-bottom: 50px;
       text-align: center;
 
       img { margin-bottom: 15px; }
 
       &.first-step {
         position: relative;
-        &:before { 
+        &:before {
           position: absolute;
           content: '';
           width: 45px;
@@ -98,5 +98,5 @@
       }
     }
   }
-  
+
 }
