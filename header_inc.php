@@ -48,7 +48,7 @@ $base_url = "http://onemorecleaner.com/demo/";
         <!--header-->
         <div class="banner">
           <div class="container">
-              <p><span>COVID-19 NOTICE:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p><span>COVID-19 NOTICE:</span> We are operational and following the government mandated guidelines ensuring the health and safety of our clients.</p>
           </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light">
