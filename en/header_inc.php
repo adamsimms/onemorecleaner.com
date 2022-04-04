@@ -1,5 +1,5 @@
 <?php
-$base_url = "http://onemorecleaner.com/demo/";
+$base_url = "http://onemorecleaner.com/en/";
 ?>
 <!DOCTYPE html>
 <html lang="en">
