@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+//offer css
+
+.offer-info {
+    text-align: center;
+    position: relative;
+    @media (max-width: 991px) {
+        margin-bottom: 50px;
+    }
+    .offer-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #FFFFFF;
+        box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.18);
+        border-radius: 5px;
+        padding: 12px;
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        cursor: pointer;
+        transition: all ease 1s;
+        &:hover {
+            text-decoration: none;
+            transition: all ease 1s;
+            background: #25425F;
+            p,
+            .icon-right-arrow{
+                color: #EF6E43
+            }
+        }
+        @media (max-width: 767px) {
+            right: 50%;
+            transform: translateX(50%);
+            width: 250px;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+            color: #25425F;
+            padding-right: 10px;
+            margin-bottom: 0;
+        }
+        .icon-right-arrow{
+            color: #25425F;
+        }
+    }
+}
+
+.offers {
+  margin-bottom: 30px;
+    h2 {
+        font-family: 'Teko', sans-serif;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 82.9%;
+        color: #FFFFFF;
+        padding-bottom: 40px;
+        text-transform: uppercase;
+        @media (max-width: 767px) {
+            font-size: 32px;
+        }
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+}

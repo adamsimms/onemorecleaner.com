@@ -1,0 +1,184 @@
+//reset css
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body,
+html {
+    height: 100%;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EF6E43;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+section {
+    padding: 50px 0;
+    &.we-do {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        @media (min-width:769px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+.btn {
+    &.btn-primary {
+        background: #EF6E43;
+        box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.18);
+        border-radius: 3px;
+        border: none;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        height: 54px;
+        padding: 0 60px;
+        transition: all ease 1s;
+        &:hover{
+            transition: all ease 1s;
+            color: #EF6E43;
+            background-color: #fff;
+        }
+    }
+}
+
+
+.main-wrapper {
+    overflow: hidden;
+}

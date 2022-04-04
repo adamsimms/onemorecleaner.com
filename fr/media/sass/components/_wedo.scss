@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+//offer css
+
+.we-do {
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-family: 'Teko', sans-serif;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 82.9%;
+        color: #FFFFFF;
+        text-align: left;
+        padding-bottom: 40px;
+
+        @media (max-width: 767px) {
+            font-size: 32px;
+        }
+    }
+
+    h5 {
+        font-family: 'Caveat', cursive;
+        font-size: 28px;
+        line-height: 1;
+        font-style: normal;
+        font-weight: 700;
+        text-align: left;
+        color: #FFF;  
+        margin-top: 0;
+        margin-bottom: 26px;
+    }
+
+    ul {
+        background: #BF5836;
+        padding: 30px 30px 30px 50px;
+        border-radius: 12px;
+    }
+    li {
+        list-style-type: disc;
+        color: #FFF;
+        margin-bottom: 5px;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+
+}

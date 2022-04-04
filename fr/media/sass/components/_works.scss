@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+//offer css
+
+.works {
+
+  text-align: center;
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    width: 220px;
+
+  }
+
+  h2 {
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: left;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 48px;
+
+    @media (min-width: 767px) {
+      font-size: 48px;
+      line-height: 82%;
+      text-align: left;
+    }
+  }
+
+  .how-it-works {
+    padding: 0 15px;
+    width: 100%;
+    @media (min-width:769px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    li {
+      margin-bottom: 50px;
+      text-align: center;
+
+      img { margin-bottom: 15px; }
+
+      &.first-step {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          width: 45px;
+          height: 191px;
+          background: url('../images/works-right.png') right 0 no-repeat;
+          top: 125px;
+          right: 0;
+          background-size: 70%;
+          @media(min-width:375px) { background-size: 100%; }
+          @media(min-width:768px) { right: 100px; }
+          @media (min-width:769px) {
+            width: 191px;
+            height: 43px;
+            background: url('../images/works-down.png') right 0 no-repeat;
+            top: 50%;
+            left: 100%;
+          }
+        }
+      }
+      &.second-step {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          width: 45px;
+          height: 191px;
+          background: url('../images/works-left.png') right 0 no-repeat;
+          left: -10px;
+          top: 125px;
+          background-size: 70%;
+          @media(min-width:375px) { background-size: 100%; }
+          @media(min-width:768px) { left: 100px; }
+          @media (min-width:769px) {
+            width: 191px;
+            height: 43px;
+            background: url('../images/works-up.png') right 0 no-repeat;
+            top: -10px;
+            left: 100%;
+          }
+        }
+      }
+      &.third-step {
+        margin-bottom: 0;
+      }
+
+      p {
+        margin: 0 auto;
+      }
+    }
+  }
+
+}

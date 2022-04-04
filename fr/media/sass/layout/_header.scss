@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+//header css
+
+.banner {
+  background: #1B3045;
+  padding: 15px 0;
+  color: #FFFFFF;
+  text-align: center;
+
+  span {
+    color: #EF6E43;
+    font-weight: bold;
+  }
+}
+
+.navbar-expand-lg {
+    padding: 20px 15px;
+    @media (min-width: 768px) { padding: 20px 30px; }
+    @media (min-width: 992px) {
+        padding: 50px 0;
+        justify-content: space-between;
+    }
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        &[aria-expanded="true"]{
+            .hamburger-inner{
+                &:before{
+                    transform: translate3d(-8px,0,0) rotate(-45deg) scaleX(.7);
+                }
+                &:after{
+                    transform: translate3d(-8px,0,0) rotate(45deg) scaleX(.7);
+                }
+            }
+        }
+        &:focus {
+            outline: none;
+        }
+        .hamburger-inner{
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            transition-timing-function: ease;
+            transition-duration: .15s;
+            transition-property: transform;
+            border-radius: 4px;
+            background-color: #fff;
+            &:before{
+                top: -7px;
+            }
+            &:after{
+                bottom: -7px;
+            }
+            &:before,
+            &:after{
+                position: absolute;
+                content: "";
+                display: block;
+                width: 30px;
+                height: 3px;
+                transition-timing-function: ease;
+                transition-duration: .15s;
+                transition-property: transform;
+                border-radius: 4px;
+                background-color: #fff;
+            }
+        }
+    }
+    .navbar-collapse {
+        @media (min-width: 992px) {
+            flex-basis: inherit;
+            flex-grow: inherit;
+        }
+        @media (max-width: 991px) {
+            position: absolute;
+            top: 100px;
+            background-color: #ef6e43;
+            left: 0;
+            right: 0;
+            z-index: 9;
+            height: 100vh;
+        }
+        @media (max-width: 767px){
+            top: 70px;
+        }
+    }
+    .navbar-brand {
+        img {
+            max-width: 200px;
+            @media (min-width: 992px) {
+                max-width: inherit;
+            }
+        }
+    }
+    .contact {
+        transition: all ease 0.5s;
+        a{
+            transition: all ease 0.5s;
+            &:hover{
+                transition: all ease 0.5s;
+                text-decoration: none;
+                p,
+                i:before{
+                    color: #25425F;
+                }
+            }
+        }
+        p {
+            display: none;
+            @media (min-width: 992px) {
+                display: block;
+            }
+        }
+        i{
+            font-size: 30px;
+        }
+    }
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 21px;
+            padding: 15px 10px 15px;
+            color: #fff;
+            text-transform: uppercase;
+            transition: all ease 0.5s;
+            @media (max-width: 991px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            @media (min-width: 992px) {
+                color: #fff;
+                padding: 0 10px 5px;
+            }
+            &:hover{
+                transition: all ease 0.5s;
+                color: #25425F;
+            }
+            .img-fluid{
+                display: none;
+                @media (max-width: 991px) {
+                        display: block;
+                        max-width: 100px;
+                        margin-bottom: 10px
+                }
+            }
+        }
+        .active {
+            transition: all ease 0.5s;
+            &:hover{
+                .nav-link {
+                    transition: all ease 0.5s;
+                    border-bottom: 4px solid #25425F;
+                    color: #25425F;
+                }
+            }
+            .nav-link {
+                color: #fff;
+                @media (min-width: 992px) {
+                    color: #fff;
+                    border-bottom: 4px solid #fff;
+                }
+            }
+        }
+    }
+
+    .contact {
+        a {
+            display: block;
+            display: flex;
+            align-items: center;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 21px;
+            color: #fff;
+            padding-left: 10px;
+        }
+    }
+    .navbar-brand {
+        padding: 6px 0 0 0;
+        margin: 0;
+        font-family: 'Teko', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 36px;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        i {
+            width: 22px;
+            height: 25px;
+            background: url("../images/vaccum.svg") 0 0 no-repeat;
+            display: inline-block;
+            background-size: contain;
+            margin-left: 2px;
+        }
+        @media (min-width: 768px){
+            padding-top: 0;
+            font-size: 64px;
+            line-height: 92px;
+            i {
+                width: 35px;
+                height: 42px;
+                background: url("../images/vaccum.svg") 0 0 no-repeat;
+                display: inline-block;
+                background-size: contain;
+            }
+        }
+        &:hover{
+            color: #25425F;
+            i {
+                background: url('../images/vaccum-hover.svg') 0 0 no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+}
