@@ -14,7 +14,7 @@
               </div>
               <div class="col-md-4">
                   <div class="facebook">
-                  <a href="#"><i></i> LIKE US ON FACEBOOK</a>
+                   <a href="http://www.onemorecleaner.com/fr/"><!--<i></i>--> Français</a>
                   </div>
               </div>
           </div>
