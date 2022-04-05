@@ -13,8 +13,8 @@ require_once("../header_inc.php")
     <div class="row">
       <div class="col-md-6">
         <div class="hero-intro">
-          <h1>LE MEILLEUR NETTOYEUR DE BUREAUX A MONTREAL.</h1>
-          <p>Nous sommes fiers d'être respectueux de l’environnement.</p>
+          <h1>LE MEILLEUR NETTOYEUR DE BUREAUX A MONTREAL</h1>
+          <p>Nous sommes fiers d'être respectueux de l’environnement</p>
         </div>
       </div>
       <div class="hero-img">
@@ -86,7 +86,7 @@ require_once("../header_inc.php")
           <li>Nettoyez les armoires, à l'intérieur comme à l'extérieur.</li>
           <li>Nettoyage localisé des murs.</li>
           <li>Lavage des murs et nettoyage des plafonds.</li>
-          <li>Nettoyez le réfrigérateur et la cuisinière - à l'intérieur et à l'extérieur.</li>
+          <li>Nettoyez le réfrigérateur et la cuisinière</li>
           <li>Dépoussiérage des luminaires et des ventilateurs de plafond.</li>
           <li>Essuyez les stores avec un chiffon humide.</li>
           <li>Laver les appuis de fenêtre intérieurs, les cadres et les plinthes.</li>
