@@ -14,8 +14,8 @@ require_once("header_inc.php")
     <div class="row">
       <div class="col-md-6">
         <div class="hero-intro">
-          <h1>LE MEILLEUR NETTOYEUR À MONTRÉAL.</h1>
-          <p>Nous sommes fiers d'être respectueux de l’environnement.</p>
+          <h1>LE MEILLEUR NETTOYEUR A MONTREAL</h1>
+          <p>Nous sommes fiers d'être respectueux de l’environnement</p>
         </div>
       </div>
       <div class="hero-img">
