@@ -18,7 +18,7 @@ $base_url = "http://onemorecleaner.com/fr/";
     <meta name="Classification" content="Business">
     <meta name="author" content="ONE MORE CLEANER, info@onemorecleaner.com">
     <meta name="designer" content="Adam Simms, hello@adamsim.ms">
-    <meta name="reply-to" content="info@onemorecleaner.com">
+    <meta name="reply-to" content="jimmy@onemorecleaner.com">
     <meta name="url" content="http://www.onemorecleaner.com">
     <meta name="identifier-URL" content="http://www.onemorecleaner.com">
     <meta name="coverage" content="Worldwide">

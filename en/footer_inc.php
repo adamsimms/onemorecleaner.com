@@ -4,7 +4,7 @@
           <div class="row">
               <div class="col-md-4">
                   <div class="user-email">
-                      <a href="#">info@onemorecleaner.com</a>
+                      <a href="mailto:jimmy@onemorecleaner.com">jimmy@onemorecleaner.com</a>
                   </div>
               </div>
               <div class="col-md-4">
@@ -14,7 +14,7 @@
               </div>
               <div class="col-md-4">
                   <div class="facebook">
-                   <a href="http://www.onemorecleaner.com/fr/"><!--<i></i>--> Français</a>
+                   <a href="http://www.onemorecleaner.com/fr/"><!--<i></i>--> FR</a>
                   </div>
               </div>
           </div>

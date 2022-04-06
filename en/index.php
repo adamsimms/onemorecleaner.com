@@ -44,7 +44,7 @@ require_once("header_inc.php")
         </div>
         <div class="col-md-6 col-lg-3 form-group">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Reply to email" onfocus="this.value = ''">
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="valerie@montrea.ca" onfocus="this.value = ''">
         </div>
         <div class="col-md-6 col-lg-3 form-group arrow-down">
           <label for="service">Service</label>

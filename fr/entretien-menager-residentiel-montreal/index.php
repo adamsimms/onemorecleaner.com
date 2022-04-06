@@ -43,7 +43,7 @@ require_once("../header_inc.php")
         </div>
         <div class="col-md-6 col-lg-3 form-group">
           <label for="email">Courriel</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Reply to email" onfocus="this.value = ''">
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="valerie@montreal.ca" onfocus="this.value = ''">
         </div>
         <div class="col-md-6 col-lg-3 form-group arrow-down">
           <label for="service">Service</label>
@@ -62,7 +62,7 @@ require_once("../header_inc.php")
     <span id="form_success" style="display: none;">
       <div class="row">
         <div class="col-12">
-          <h2>Thanks!</h2>
+          <h2>Merci!</h2>
           <div>Nous vous contacterons sous peu pour discuter des prochaines étapes.</div>
           <div>Bonne journée!</div>
         </div>
