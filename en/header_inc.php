@@ -1,5 +1,5 @@
 <?php
-$base_url = "http://onemorecleaner.com/";
+$base_url = "https://onemorecleaner.com/";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,8 +19,8 @@ $base_url = "http://onemorecleaner.com/";
     <meta name="author" content="ONE MORE CLEANER, info@onemorecleaner.com">
     <meta name="designer" content="Adam Simms, hello@adamsim.ms">
     <meta name="reply-to" content="jimmy@onemorecleaner.com">
-    <meta name="url" content="http://www.onemorecleaner.com">
-    <meta name="identifier-URL" content="http://www.onemorecleaner.com">
+    <meta name="url" content="https://www.onemorecleaner.com">
+    <meta name="identifier-URL" content="https://www.onemorecleaner.com">
     <meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
     <meta name="revisit-after" content="28 days">
