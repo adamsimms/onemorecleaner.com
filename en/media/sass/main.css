@@ -625,7 +625,7 @@ section.hero-banner {
 }
 @media (min-width: 992px) {
   .hero-banner {
-    min-height: 560px;
+    min-height: 520px;
     display: flex;
     align-items: center;
   }
@@ -635,17 +635,25 @@ section.hero-banner {
 }
 .hero-banner .hero-img {
   position: absolute;
-  right: 0;
+  right: -2%;
   top: 50%;
   transform: translateY(-50%);
-  width: min(44vw, 560px);
-  max-width: 560px;
+  width: min(50vw, 720px);
+  max-width: 720px;
   pointer-events: none;
   z-index: 0;
+}
+@media (min-width: 1400px) {
+  .hero-banner .hero-img {
+    right: 2%;
+    width: min(48vw, 760px);
+    max-width: 760px;
+  }
 }
 @media (max-width: 991px) {
   .hero-banner .hero-img {
     top: 0;
+    right: 0;
     transform: none;
     width: auto;
     max-width: none;
@@ -676,7 +684,7 @@ section.hero-banner {
 }
 
 .hero-intro {
-  min-height: 52vh;
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -691,8 +699,8 @@ section.hero-banner {
 }
 @media (min-width: 992px) {
   .hero-intro {
-    max-width: 54%;
-    min-height: 480px;
+    max-width: 50%;
+    min-height: 460px;
   }
 }
 .hero-intro h1 {
@@ -746,27 +754,30 @@ section.hero-banner {
   align-items: center;
 }
 .hero-intro .btn.btn-hero {
-  background: #FFFFFF;
-  color: #25425F;
+  background-color: #FFFFFF !important;
+  background-image: none !important;
+  color: #25425F !important;
   box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.18);
   border-radius: 3px;
-  border: none;
+  border: none !important;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
   font-weight: 900;
   font-size: 18px;
   line-height: 21px;
-  height: 54px;
-  padding: 0 36px;
+  min-height: 54px;
+  height: auto;
+  padding: 16px 36px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: all ease 0.4s;
 }
-.hero-intro .btn.btn-hero:hover {
-  background: #25425F;
-  color: #FFFFFF;
-  text-decoration: none;
+.hero-intro .btn.btn-hero:hover, .hero-intro .btn.btn-hero:focus {
+  background-color: #25425F !important;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
 }
 
 .quote-section {
