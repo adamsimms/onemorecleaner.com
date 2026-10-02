@@ -138,7 +138,10 @@ table {
 
 
 section {
-    padding: 50px 0;
+    padding: 72px 0;
+    @media (min-width: 992px) {
+        padding: 110px 0;
+    }
     &.we-do {
         padding-left: 25px;
         padding-right: 25px;
@@ -146,6 +149,14 @@ section {
         @media (min-width:769px) {
             padding-left: 0;
             padding-right: 0;
+        }
+    }
+    &.hero-banner {
+        padding-top: 24px;
+        padding-bottom: 48px;
+        @media (min-width: 992px) {
+            padding-top: 40px;
+            padding-bottom: 80px;
         }
     }
 }

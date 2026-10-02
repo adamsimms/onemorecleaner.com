@@ -55,20 +55,23 @@ $base_url = "https://onemorecleaner.com/fr/";
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item <?php echo ($nav_active == 'domicile') ? 'active' : '' ?>">
-                            <a class="nav-link" href="<?php echo $base_url ?>entretien-menager-residentiel-montreal/"><img src="<?php echo $base_url; ?>media/images/illustration (1).png" alt="illustration" class="img-fluid">
+                            <a class="nav-link" href="<?php echo $base_url ?>entretien-menager-residentiel-montreal/"><img src="<?php echo $base_url; ?>media/images/illustration (1).png" alt="Nettoyage à domicile" class="img-fluid">
                                 Domicile</a>
                         </li>
                         <li class="nav-item <?php echo ($nav_active == 'bureau') ? 'active' : '' ?>">
-                            <a class="nav-link" href="<?php echo $base_url ?>entretien-menager-bureaux-montreal/"> <img src="<?php echo $base_url; ?>media/images/illustration (2).png" alt="illustration" class="img-fluid">
+                            <a class="nav-link" href="<?php echo $base_url ?>entretien-menager-bureaux-montreal/"> <img src="<?php echo $base_url; ?>media/images/illustration (2).png" alt="Nettoyage de bureaux" class="img-fluid">
                                 Bureau</a>
                         </li>
                     </ul>
                 </div>
                 <a class="navbar-brand" href="<?php echo $base_url ?>">pro propre <i></i></a>
-                <div class="contact">
-                    <a href="tel:514-222-0835"><i class="icon-telephone"></i>
-                        <p>514-222-0835</p>
-                    </a>
+                <div class="nav-actions">
+                    <a class="lang-switch" href="https://onemorecleaner.com/" hreflang="en" lang="en">EN</a>
+                    <div class="contact">
+                        <a href="tel:514-222-0835"><i class="icon-telephone"></i>
+                            <p>514-222-0835</p>
+                        </a>
+                    </div>
                 </div>
             </div>
 

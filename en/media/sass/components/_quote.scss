@@ -3,8 +3,13 @@
 //quote css
 
 .quote-section {
+    scroll-margin-top: 24px;
     @media (min-width: 768px) {
-        padding-bottom: 85px;
+        padding-bottom: 40px;
+    }
+    @media (min-width: 992px) {
+        padding-top: 90px;
+        padding-bottom: 60px;
     }
 
     h2 {
