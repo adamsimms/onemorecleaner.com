@@ -1,0 +1,111 @@
+# Deploy onemorecleaner.com to GoDaddy cPanel via FTPS.
+#
+# Required GitHub Actions secrets (Settings -> Secrets and variables -> Actions):
+#   FTP_SERVER       e.g. ftp.onemorecleaner.com or onemorecleaner.com
+#   FTP_USERNAME     cPanel FTP username
+#   FTP_PASSWORD     cPanel FTP password
+#   FTP_SERVER_DIR   remote web root relative to the FTP account home
+#                    usually public_html/  (or ./ if the FTP account is jailed to public_html)
+#
+# Live layout:
+#   en/  -> site root (public_html/)
+#   en/  -> public_html/en/
+#   fr/  -> public_html/fr/
+
+name: Deploy to GoDaddy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: FTPS deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate secrets
+        id: secrets
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_SERVER_DIR: ${{ secrets.FTP_SERVER_DIR }}
+        run: |
+          missing=()
+          for name in FTP_SERVER FTP_USERNAME FTP_PASSWORD FTP_SERVER_DIR; do
+            if [ -z "${!name}" ]; then
+              missing+=("$name")
+            fi
+          done
+          if [ "${#missing[@]}" -gt 0 ]; then
+            echo "Missing required secrets: ${missing[*]}"
+            echo "Add them under Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+          root="${FTP_SERVER_DIR%/}/"
+          echo "root=$root" >> "$GITHUB_OUTPUT"
+          echo "en=${root}en/" >> "$GITHUB_OUTPUT"
+          echo "fr=${root}fr/" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy English site to document root
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./en/
+          server-dir: ${{ steps.secrets.outputs.root }}
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/README.md
+            **/.ftp-deploy-sync-state.json
+            **/.DS_Store
+
+      - name: Deploy English site to /en/
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./en/
+          server-dir: ${{ steps.secrets.outputs.en }}
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/README.md
+            **/.ftp-deploy-sync-state.json
+            **/.DS_Store
+
+      - name: Deploy French site to /fr/
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./fr/
+          server-dir: ${{ steps.secrets.outputs.fr }}
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/README.md
+            **/.ftp-deploy-sync-state.json
+            **/.DS_Store
