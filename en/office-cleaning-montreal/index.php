@@ -17,19 +17,22 @@ require_once("../header_inc.php")
             BEST OFFICE CLEANER.</h1>
           <!-- <p>With a focus on environmentally sustainable services, we pride ourselves in offering our clients a squeaky clean peace of mind as Montreal’s best cleaners. We arrive on time to get the job done, professionally taking care of your home, from top to bottom.</p> -->
           <p>We pride ourselves on being environmentally sustainable.</p>
+          <div class="hero-actions">
+            <a class="btn btn-hero" href="#quote">Get a free quote</a>
+          </div>
         </div>
       </div>
       <div class="hero-img">
-        <img src="<?php echo $base_url; ?>media/images/illustration.png" alt="illustration" class="img-fluid">
+        <img src="<?php echo $base_url; ?>media/images/illustration.png" alt="Professional cleaner ready for a Montreal cleaning visit" class="img-fluid">
       </div>
     </div>
   </div>
 </section>
 
 <!--Quote-->
-<section class="quote-section">
+<section class="quote-section" id="quote">
   <div class="container">
-    <img src="<?php echo $base_url; ?>media/images/background-bubbles.png" alt="background-bubbles">
+    <img src="<?php echo $base_url; ?>media/images/background-bubbles.png" alt="">
     <span id="form_container">
       <div class="row">
         <div class="col-12">
@@ -39,11 +42,11 @@ require_once("../header_inc.php")
       <div class="row">
         <div class="col-md-6 col-lg-3 form-group">
           <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Valerie Plante" onfocus="this.value = ''">
+          <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Valerie Plante">
         </div>
         <div class="col-md-6 col-lg-3 form-group">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="valerie@montreal.ca" onfocus="this.value = ''">
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="valerie@montreal.ca">
         </div>
         <div class="col-md-6 col-lg-3 form-group arrow-down">
           <label for="service">Service</label>
@@ -131,15 +134,17 @@ require_once("../header_inc.php")
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-lg-4">
-          <img src="<?php echo $base_url; ?>/media/images/bg-deep-stream.png" alt="Deep steam cleaning services" class="img-fluid">
+          <img src="<?php echo $base_url; ?>media/images/bg-deep-stream.png" alt="Deep steam cleaning equipment and results" class="img-fluid">
       </div>
       <div class="col-md-8 col-lg-8">
           <h3>Ask about our</h3>
           <h2>Deep Steam Cleaning Service</h2>
-          <p>Clean, disinfect, sanitize, and deodorise any surface. Stream cleaning excels at any heavy-duty cleaning tasks such as floor, grout and tile cleaning. For a particularly grimy surface, a burst of ecologic detergent into the steam dislodges grease, dirt and stains.</p>
-          <p>Superheated steam kills up 99.9% of bacteria, germs and viruses. Superheated steam kills up to 99.9% of bacteria, germs and viruses. Quickly disinfect floors, carpets, countertops, slicers, kitchen equipment, bathrooms and more.</p>
-          <p>Our steam cleaning service is the optimal solution for a germ-free environment with better cleaning results in less time!</p>
-
+          <p>Clean, disinfect, sanitize, and deodorise any surface. Steam cleaning excels at heavy-duty jobs such as floor, grout, and tile cleaning. For a particularly grimy surface, a burst of ecologic detergent into the steam dislodges grease, dirt, and stains.</p>
+          <p>Superheated steam kills up to 99.9% of bacteria, germs, and viruses. Quickly disinfect floors, carpets, countertops, kitchen equipment, bathrooms, and more.</p>
+          <p>Our steam cleaning service is the optimal solution for a germ-free environment with better cleaning results in less time.</p>
+          <div class="steam-actions">
+            <a class="btn btn-primary" href="#quote">Ask about steam cleaning</a>
+          </div>
       </div>
     </div>
   </div>
@@ -152,19 +157,19 @@ require_once("../header_inc.php")
       <div class="col-md-6 col-lg-4">
         <div class="customer-info">
           <h3>SINCE 2012</h3>
-          <p>One More Cleaner was created on the commitment and dedication to providing the best quality, most consistent and efficient cleaning service in the Greater Montreal area.</p>
+          <p>One More Cleaner was built on a commitment to consistent, high-quality cleaning across the Greater Montreal area.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="customer-info">
-          <h3>100+ CUSTOMERS</h3>
-          <p>From young professionals, families, and offices, we build long term relationships with all of our clients. We are proud to specialize in detailed cleaning tailored to your needs.</p>
+          <h3>GREATER MONTREAL</h3>
+          <p>Homes and offices across the island trust us for detailed cleans and long-term relationships tailored to their needs.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="customer-info">
           <h3>100% SATISFACTION</h3>
-          <p>Guaranteed. Period. We pride ourselves on being dependable, professional and thorough., but, above all, we pride ourselves on being environmentally sustainable.</p>
+          <p>Guaranteed. Period. We pride ourselves on being dependable, professional, thorough, and environmentally sustainable.</p>
         </div>
       </div>
     </div>

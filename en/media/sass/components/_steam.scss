@@ -1,4 +1,14 @@
 .ask-about-deep-steam {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @media (min-width: 992px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .steam-actions {
+    margin-top: 10px;
+  }
 
   .container {
       background: #DAF1F7;
