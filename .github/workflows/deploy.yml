@@ -56,6 +56,10 @@ jobs:
           echo "en=${root}en/" >> "$GITHUB_OUTPUT"
           echo "fr=${root}fr/" >> "$GITHUB_OUTPUT"
 
+      # GoDaddy shared hosting presents a *.secureserver.net cert that does not
+      # match custom FTP hostnames, so strict TLS name checks fail. Keep FTPS
+      # encryption with security: loose unless FTP_SERVER is set to the
+      # hostname shown on the server certificate in cPanel.
       - name: Deploy English site to document root
         uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65 # v4.3.5
         with:
@@ -63,7 +67,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          security: strict
+          security: loose
           port: 21
           local-dir: ./en/
           server-dir: ${{ steps.secrets.outputs.root }}
@@ -82,7 +86,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          security: strict
+          security: loose
           port: 21
           local-dir: ./en/
           server-dir: ${{ steps.secrets.outputs.en }}
@@ -101,7 +105,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          security: strict
+          security: loose
           port: 21
           local-dir: ./fr/
           server-dir: ${{ steps.secrets.outputs.fr }}
