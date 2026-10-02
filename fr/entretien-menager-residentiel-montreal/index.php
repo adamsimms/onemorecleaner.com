@@ -148,7 +148,7 @@ require_once("../header_inc.php")
           <p>La vapeur surchauffée tue jusqu'à 99,9 % des bactéries, germes et virus. Désinfectez rapidement les sols, les tapis, les comptoirs, les équipements de cuisine, les salles de bain et plus encore.</p>
           <p>Notre service de nettoyage à la vapeur est la solution optimale pour un environnement sans germes avec de meilleurs résultats en moins de temps.</p>
           <div class="steam-actions">
-            <a class="btn btn-primary" href="#quote">Demander le nettoyage à la vapeur</a>
+            <a class="btn btn-primary" href="#quote" onclick="var s=document.getElementById('service'); if(s){s.value='STEAM CLEANING';}">Demander le nettoyage à la vapeur</a>
           </div>
       </div>
     </div>

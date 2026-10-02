@@ -148,7 +148,7 @@ require_once("../header_inc.php")
           <p>Superheated steam kills up to 99.9% of bacteria, germs, and viruses. Quickly disinfect floors, carpets, countertops, kitchen equipment, bathrooms, and more.</p>
           <p>Our steam cleaning service is the optimal solution for a germ-free environment with better cleaning results in less time.</p>
           <div class="steam-actions">
-            <a class="btn btn-primary" href="#quote">Ask about steam cleaning</a>
+            <a class="btn btn-primary" href="#quote" onclick="var s=document.getElementById('service'); if(s){s.value='STEAM CLEANING';}">Ask about steam cleaning</a>
           </div>
       </div>
     </div>

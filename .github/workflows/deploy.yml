@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Validate secrets
         id: secrets
@@ -57,12 +57,13 @@ jobs:
           echo "fr=${root}fr/" >> "$GITHUB_OUTPUT"
 
       - name: Deploy English site to document root
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65 # v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
+          security: strict
           port: 21
           local-dir: ./en/
           server-dir: ${{ steps.secrets.outputs.root }}
@@ -75,12 +76,13 @@ jobs:
             **/.DS_Store
 
       - name: Deploy English site to /en/
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65 # v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
+          security: strict
           port: 21
           local-dir: ./en/
           server-dir: ${{ steps.secrets.outputs.en }}
@@ -93,12 +95,13 @@ jobs:
             **/.DS_Store
 
       - name: Deploy French site to /fr/
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65 # v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
+          security: strict
           port: 21
           local-dir: ./fr/
           server-dir: ${{ steps.secrets.outputs.fr }}
