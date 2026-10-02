@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
-
 //hero css
 .hero-banner {
     position: relative;
@@ -8,7 +5,7 @@
         padding-top: 35px;
     }
     @media (min-width: 992px) {
-        min-height: 520px;
+        min-height: 560px;
         display: flex;
         align-items: center;
     }
@@ -17,17 +14,17 @@
     }
     .hero-img {
         position: absolute;
-        right: -2%;
+        right: -4%;
         top: 50%;
         transform: translateY(-50%);
-        width: min(50vw, 720px);
-        max-width: 720px;
+        width: min(58vw, 900px);
+        max-width: 900px;
         pointer-events: none;
         z-index: 0;
         @media (min-width: 1400px) {
-            right: 2%;
-            width: min(48vw, 760px);
-            max-width: 760px;
+            right: 0;
+            width: min(56vw, 980px);
+            max-width: 980px;
         }
         @media (max-width: 991px) {
             top: 0;
@@ -46,11 +43,11 @@
             height: auto;
             max-width: 100%;
             @media (max-width: 991px) {
-                max-width: 420px;
+                max-width: 480px;
                 width: auto;
             }
             @media (max-width: 767px) {
-                max-width: 260px;
+                max-width: 300px;
             }
         }
     }
@@ -68,44 +65,46 @@
         min-height: auto;
     }
     @media (min-width: 992px) {
-        max-width: 50%;
-        min-height: 460px;
+        max-width: 46%;
+        min-height: 500px;
     }
     h1 {
         font-family: 'Teko', sans-serif;
         font-size: 48px;
-        line-height: 82.9%;
+        line-height: 0.9;
         max-width: 249px;
         font-weight: 600;
         font-style: normal;
-        letter-spacing: 0em;
+        letter-spacing: 0;
         text-align: left;
+        text-transform: uppercase;
         color: #F5F4F2;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         @media (min-width: 768px) {
-            font-size: 60px;
-            line-height: 60px;
-            max-width: inherit;
+            font-size: 64px;
+            max-width: none;
         }
         @media (min-width: 992px) {
-            font-size: 120px;
-            line-height: 82.9%;
+            font-size: 104px;
         }
     }
     p {
         font-family: 'Caveat', cursive;
-        font-size: 28px;
-        line-height: 35px;
+        font-size: 24px;
+        line-height: 1.25;
         font-style: normal;
         font-weight: 700;
-        letter-spacing: 0em;
+        letter-spacing: 0;
         text-align: left;
+        text-transform: none;
         color: #FFF;
         margin-bottom: 28px;
+        @media (min-width: 768px) {
+            font-size: 28px;
+        }
         @media (max-width: 767px) {
-            font-size: 18px;
-            line-height: 20px;
-            max-width: 165px;
+            font-size: 20px;
+            max-width: 180px;
             margin-bottom: 20px;
         }
     }
@@ -123,10 +122,10 @@
         border-radius: 3px;
         border: none !important;
         font-family: 'Roboto', sans-serif;
-        font-style: italic;
+        font-style: normal;
         font-weight: 900;
         font-size: 18px;
-        line-height: 21px;
+        line-height: 1.2;
         min-height: 54px;
         height: auto;
         padding: 16px 36px;

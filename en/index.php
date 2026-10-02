@@ -52,9 +52,9 @@ require_once("header_inc.php")
         <div class="col-md-6 col-lg-3 form-group arrow-down">
           <label for="service">Service</label>
           <select class="form-control" id="service">
-            <option value="HOUSE CLEANING">HOUSE CLEANING</option>
-            <option value="OFFICE CLEANING">OFFICE CLEANING</option>
-            <option value="STEAM CLEANING">STEAM CLEANING</option>
+            <option value="HOUSE CLEANING">House cleaning</option>
+            <option value="OFFICE CLEANING">Office cleaning</option>
+            <option value="STEAM CLEANING">Steam cleaning</option>
           </select>
           <i class="icon-down-arrow"></i>
         </div>

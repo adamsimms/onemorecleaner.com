@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-//offer css
+// how-it-works section
 
 .works {
 
@@ -9,25 +7,24 @@
   p {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 15px;
+    line-height: 1.45;
     color: #fff;
     width: 220px;
-
   }
 
   h2 {
     font-family: 'Teko', sans-serif;
     font-weight: 600;
     color: #FFFFFF;
-    text-align: left;
+    text-transform: uppercase;
     padding-bottom: 40px;
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
+    line-height: 0.9;
 
-    @media (min-width: 767px) {
-      font-size: 48px;
-      line-height: 82%;
+    @media (min-width: 768px) {
+      font-size: 52px;
       text-align: left;
     }
   }

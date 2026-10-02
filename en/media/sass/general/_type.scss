@@ -1,0 +1,59 @@
+// Shared typography roles for One More Cleaner.
+// Teko = display, Caveat = accent/eyebrow, Roboto = UI + body.
+
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #25425F;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.type-display,
+h1 {
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.type-section,
+h2 {
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.type-accent,
+.type-eyebrow,
+h3.type-accent,
+h5 {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: 1.25;
+    text-transform: none;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: none;
+}
