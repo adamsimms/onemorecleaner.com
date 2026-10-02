@@ -81,7 +81,7 @@ require_once("header_inc.php")
       <div class="col-md-4 col-lg-4">
         <div class="offer-info">
           <img src="<?php echo $base_url; ?>media/images/illustration (1).png" alt="illustration" class="img-fluid">
-          <a class="offer-details" href="http://www.onemorecleaner.com/demo/house-cleaning-services-montreal/">
+          <a class="offer-details" href="https://www.onemorecleaner.com/demo/house-cleaning-services-montreal/">
             <p>Nettoyage à domicile</p>
             <i class="icon-right-arrow"></i>
           </a>
@@ -90,7 +90,7 @@ require_once("header_inc.php")
       <div class="col-md-4 col-lg-4">
         <div class="offer-info">
           <img src="<?php echo $base_url; ?>media/images/illustration (2).png" alt="illustration" class="img-fluid">
-          <a class="offer-details" href="http://www.onemorecleaner.com/demo/office-cleaning-montreal/">
+          <a class="offer-details" href="https://www.onemorecleaner.com/demo/office-cleaning-montreal/">
             <p>Nettoyage au bureau</p>
             <i class="icon-right-arrow"></i>
           </a>
