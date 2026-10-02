@@ -46,11 +46,6 @@ $base_url = "https://onemorecleaner.com/fr/";
 <body>
     <div class="main-wrapper">
         <!--header-->
-        <div class="banner">
-          <div class="container">
-              <p><span>COVID-19:</span> Nous sommes opérationnels et suivons les directives du gouvernement pour assurer la santé et la sécurité de nos clients.</p>
-          </div>
-        </div>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
