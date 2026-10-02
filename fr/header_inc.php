@@ -40,7 +40,7 @@ $base_url = "https://onemorecleaner.com/fr/";
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo $base_url; ?>media/sass/main.css">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>media/sass/main.css?v=20261002">
 </head>
 
 <body>
