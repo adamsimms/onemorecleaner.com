@@ -1,5 +1,11 @@
 <?php
 $base_url = "https://onemorecleaner.com/";
+$lang_switch_href = "https://onemorecleaner.com/fr/";
+if (isset($nav_active) && $nav_active === "house") {
+    $lang_switch_href = "https://onemorecleaner.com/fr/entretien-menager-residentiel-montreal/";
+} elseif (isset($nav_active) && $nav_active === "office") {
+    $lang_switch_href = "https://onemorecleaner.com/fr/entretien-menager-bureaux-montreal/";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +46,7 @@ $base_url = "https://onemorecleaner.com/";
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo $base_url; ?>media/sass/main.css?v=20261002">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>media/sass/main.css?v=20261002b">
 </head>
 
 <body>
@@ -66,7 +72,7 @@ $base_url = "https://onemorecleaner.com/";
                 </div>
                 <a class="navbar-brand" href="<?php echo $base_url ?>">one more clea<i></i>er</a>
                 <div class="nav-actions">
-                    <a class="lang-switch" href="https://onemorecleaner.com/fr/" hreflang="fr" lang="fr">FR</a>
+                    <a class="lang-switch" href="<?php echo $lang_switch_href; ?>" hreflang="fr" lang="fr">FR</a>
                     <div class="contact">
                         <a href="tel:514-222-0835"><i class="icon-telephone"></i>
                             <p>514-222-0835</p>
