@@ -96,6 +96,9 @@
             }
         }
     }
+    .container {
+        align-items: center;
+    }
     .nav-actions {
         display: flex;
         align-items: center;
@@ -114,23 +117,34 @@
         line-height: 21px;
         color: #fff;
         text-transform: uppercase;
-        text-decoration: none;
-        padding: 0 10px 5px;
-        border-bottom: 4px solid transparent;
-        transition: all ease 0.5s;
+        text-decoration: none !important;
+        display: inline-flex;
+        align-items: center;
+        height: 32px;
+        padding: 0 10px;
+        border: none;
+        box-shadow: none;
+        transition: color ease 0.5s;
         &:hover,
         &:focus {
             color: #25425F;
-            border-bottom-color: #25425F;
-            text-decoration: none;
+            text-decoration: none !important;
+            border: none;
+            box-shadow: none;
         }
     }
     .contact {
-        transition: all ease 0.5s;
+        display: flex;
+        align-items: center;
+        height: 32px;
+        transition: color ease 0.5s;
         a{
-            transition: all ease 0.5s;
+            display: flex;
+            align-items: center;
+            height: 32px;
+            text-decoration: none;
+            transition: color ease 0.5s;
             &:hover{
-                transition: all ease 0.5s;
                 text-decoration: none;
                 p,
                 i:before{
@@ -140,18 +154,22 @@
         }
         p {
             display: none;
+            margin: 0;
+            padding: 0 0 0 8px;
             @media (min-width: 992px) {
                 display: block;
             }
         }
         i{
-            font-size: 30px;
+            font-size: 20px;
+            line-height: 1;
         }
     }
 }
 
 .navbar-light {
     .navbar-nav {
+        align-items: center;
         .nav-link {
             font-family: 'Roboto', sans-serif;
             font-style: italic;
@@ -161,7 +179,8 @@
             padding: 15px 10px 15px;
             color: #fff;
             text-transform: uppercase;
-            transition: all ease 0.5s;
+            text-decoration: none;
+            transition: color ease 0.5s;
             @media (max-width: 991px){
                 display: flex;
                 flex-direction: column;
@@ -169,11 +188,15 @@
             }
             @media (min-width: 992px) {
                 color: #fff;
-                padding: 0 10px 5px;
+                display: inline-flex;
+                align-items: center;
+                height: 32px;
+                padding: 0 10px;
+                position: relative;
             }
             &:hover{
-                transition: all ease 0.5s;
                 color: #25425F;
+                text-decoration: none;
             }
             .img-fluid{
                 display: none;
@@ -185,19 +208,29 @@
             }
         }
         .active {
-            transition: all ease 0.5s;
-            &:hover{
-                .nav-link {
-                    transition: all ease 0.5s;
-                    border-bottom: 4px solid #25425F;
-                    color: #25425F;
-                }
-            }
             .nav-link {
                 color: #fff;
                 @media (min-width: 992px) {
                     color: #fff;
-                    border-bottom: 4px solid #fff;
+                    border-bottom: none;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 10px;
+                        right: 10px;
+                        bottom: 0;
+                        height: 4px;
+                        background: #fff;
+                    }
+                }
+                &:hover {
+                    color: #25425F;
+                    border-bottom: none;
+                    @media (min-width: 992px) {
+                        &::after {
+                            background: #25425F;
+                        }
+                    }
                 }
             }
         }
@@ -205,7 +238,6 @@
 
     .contact {
         a {
-            display: block;
             display: flex;
             align-items: center;
         }
@@ -216,7 +248,8 @@
             font-size: 18px;
             line-height: 21px;
             color: #fff;
-            padding-left: 10px;
+            margin: 0;
+            padding: 0 0 0 8px;
         }
     }
     .navbar-brand {
