@@ -87,7 +87,7 @@ require_once("header_inc.php")
         <div class="offer-info">
           <img src="<?php echo $base_url; ?>media/images/illustration (1).png" alt="House cleaning service in Montreal" class="img-fluid">
           <a class="offer-details" href="<?php echo $base_url; ?>house-cleaning-services-montreal/">
-            <p>HOUSE CLEANING</p>
+            <span>House cleaning</span>
             <i class="icon-right-arrow"></i>
           </a>
         </div>
@@ -96,7 +96,7 @@ require_once("header_inc.php")
         <div class="offer-info">
           <img src="<?php echo $base_url; ?>media/images/illustration (2).png" alt="Office cleaning service in Montreal" class="img-fluid">
           <a class="offer-details" href="<?php echo $base_url; ?>office-cleaning-montreal/">
-            <p>OFFICE CLEANING</p>
+            <span>Office cleaning</span>
             <i class="icon-right-arrow"></i>
           </a>
         </div>

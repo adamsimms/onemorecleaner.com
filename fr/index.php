@@ -86,7 +86,7 @@ require_once("header_inc.php")
         <div class="offer-info">
           <img src="<?php echo $base_url; ?>media/images/illustration (1).png" alt="Service de nettoyage à domicile à Montréal" class="img-fluid">
           <a class="offer-details" href="<?php echo $base_url; ?>entretien-menager-residentiel-montreal/">
-            <p>Nettoyage à domicile</p>
+            <span>Nettoyage à domicile</span>
             <i class="icon-right-arrow"></i>
           </a>
         </div>
@@ -95,7 +95,7 @@ require_once("header_inc.php")
         <div class="offer-info">
           <img src="<?php echo $base_url; ?>media/images/illustration (2).png" alt="Service de nettoyage de bureaux à Montréal" class="img-fluid">
           <a class="offer-details" href="<?php echo $base_url; ?>entretien-menager-bureaux-montreal/">
-            <p>Nettoyage au bureau</p>
+            <span>Nettoyage au bureau</span>
             <i class="icon-right-arrow"></i>
           </a>
         </div>
