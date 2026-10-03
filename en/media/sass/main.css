@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap");
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoons/icomoon.eot");
@@ -46,10 +47,10 @@ html {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
 }
 
 .type-display,
@@ -194,6 +195,9 @@ h5 {
     max-width: inherit;
   }
 }
+.navbar-expand-lg .container {
+  align-items: center;
+}
 .navbar-expand-lg .nav-actions {
   display: flex;
   align-items: center;
@@ -214,24 +218,35 @@ h5 {
   line-height: 21px;
   color: #fff;
   text-transform: uppercase;
-  text-decoration: none;
-  padding: 0 10px 5px;
-  border-bottom: 4px solid transparent;
-  transition: all ease 0.5s;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 10px;
+  border: none;
+  box-shadow: none;
+  transition: color ease 0.5s;
 }
 .navbar-expand-lg .lang-switch:hover, .navbar-expand-lg .lang-switch:focus {
   color: #25425F;
-  border-bottom-color: #25425F;
-  text-decoration: none;
+  text-decoration: none !important;
+  border: none;
+  box-shadow: none;
 }
 .navbar-expand-lg .contact {
-  transition: all ease 0.5s;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  transition: color ease 0.5s;
 }
 .navbar-expand-lg .contact a {
-  transition: all ease 0.5s;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  text-decoration: none;
+  transition: color ease 0.5s;
 }
 .navbar-expand-lg .contact a:hover {
-  transition: all ease 0.5s;
   text-decoration: none;
 }
 .navbar-expand-lg .contact a:hover p,
@@ -240,6 +255,8 @@ h5 {
 }
 .navbar-expand-lg .contact p {
   display: none;
+  margin: 0;
+  padding: 0 0 0 8px;
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .contact p {
@@ -247,9 +264,13 @@ h5 {
   }
 }
 .navbar-expand-lg .contact i {
-  font-size: 30px;
+  font-size: 20px;
+  line-height: 1;
 }
 
+.navbar-light .navbar-nav {
+  align-items: center;
+}
 .navbar-light .navbar-nav .nav-link {
   font-family: "Roboto", sans-serif;
   font-style: italic;
@@ -259,7 +280,8 @@ h5 {
   padding: 15px 10px 15px;
   color: #fff;
   text-transform: uppercase;
-  transition: all ease 0.5s;
+  text-decoration: none;
+  transition: color ease 0.5s;
 }
 @media (max-width: 991px) {
   .navbar-light .navbar-nav .nav-link {
@@ -271,12 +293,16 @@ h5 {
 @media (min-width: 992px) {
   .navbar-light .navbar-nav .nav-link {
     color: #fff;
-    padding: 0 10px 5px;
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 10px;
+    position: relative;
   }
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  transition: all ease 0.5s;
   color: #25425F;
+  text-decoration: none;
 }
 .navbar-light .navbar-nav .nav-link .img-fluid {
   display: none;
@@ -288,25 +314,34 @@ h5 {
     margin-bottom: 10px;
   }
 }
-.navbar-light .navbar-nav .active {
-  transition: all ease 0.5s;
-}
-.navbar-light .navbar-nav .active:hover .nav-link {
-  transition: all ease 0.5s;
-  border-bottom: 4px solid #25425F;
-  color: #25425F;
-}
 .navbar-light .navbar-nav .active .nav-link {
   color: #fff;
 }
 @media (min-width: 992px) {
   .navbar-light .navbar-nav .active .nav-link {
     color: #fff;
-    border-bottom: 4px solid #fff;
+    border-bottom: none;
+  }
+  .navbar-light .navbar-nav .active .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    height: 4px;
+    background: #fff;
+  }
+}
+.navbar-light .navbar-nav .active .nav-link:hover {
+  color: #25425F;
+  border-bottom: none;
+}
+@media (min-width: 992px) {
+  .navbar-light .navbar-nav .active .nav-link:hover::after {
+    background: #25425F;
   }
 }
 .navbar-light .contact a {
-  display: block;
   display: flex;
   align-items: center;
 }
@@ -317,7 +352,8 @@ h5 {
   font-size: 18px;
   line-height: 21px;
   color: #fff;
-  padding-left: 10px;
+  margin: 0;
+  padding: 0 0 0 8px;
 }
 .navbar-light .navbar-brand {
   padding: 6px 0 0 0;
@@ -1002,10 +1038,10 @@ section.hero-banner {
 }
 
 .we-do p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.65;
   color: #fff;
   margin-bottom: 40px;
   max-width: 62ch;
@@ -1052,20 +1088,20 @@ section.hero-banner {
   list-style-type: disc;
   color: #FFF;
   margin-bottom: 6px;
-  line-height: 1.5;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-size: 18px;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
 }
 
 .works {
   text-align: center;
 }
 .works p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.45;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.55;
   color: #fff;
   width: 220px;
 }
@@ -1311,11 +1347,11 @@ section.hero-banner {
   }
 }
 .ask-about-deep-steam p {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.65;
   letter-spacing: 0;
   padding: 10px 0;
   color: #25425F;
@@ -1414,10 +1450,10 @@ section.hero-banner {
   }
 }
 .offers > .container > .row > [class*=col-] > p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.65;
   color: #fff;
   margin-bottom: 30px;
   max-width: 36ch;
@@ -1469,13 +1505,15 @@ section.hero-banner {
   }
 }
 .customer-wrapper .customer-info p {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 17px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.6;
   letter-spacing: 0;
   padding: 0 12px;
   max-width: 32ch;
   margin: 0 auto;
 }
+
+/*# sourceMappingURL=main.css.map */
