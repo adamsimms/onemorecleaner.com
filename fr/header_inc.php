@@ -46,7 +46,7 @@ if (isset($nav_active) && $nav_active === "domicile") {
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo $base_url; ?>media/sass/main.css?v=20261003type">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>media/sass/main.css?v=20261003mid">
 </head>
 
 <body>
@@ -62,11 +62,11 @@ if (isset($nav_active) && $nav_active === "domicile") {
                     <ul class="navbar-nav">
                         <li class="nav-item <?php echo ($nav_active == 'domicile') ? 'active' : '' ?>">
                             <a class="nav-link" href="<?php echo $base_url ?>entretien-menager-residentiel-montreal/"><img src="<?php echo $base_url; ?>media/images/illustration (1).png" alt="Nettoyage à domicile" class="img-fluid">
-                                Domicile</a>
+                                <span class="nav-short">Domicile</span><span class="nav-full">Nettoyage à domicile</span></a>
                         </li>
                         <li class="nav-item <?php echo ($nav_active == 'bureau') ? 'active' : '' ?>">
                             <a class="nav-link" href="<?php echo $base_url ?>entretien-menager-bureaux-montreal/"> <img src="<?php echo $base_url; ?>media/images/illustration (2).png" alt="Nettoyage de bureaux" class="img-fluid">
-                                Bureau</a>
+                                <span class="nav-short">Bureau</span><span class="nav-full">Nettoyage de bureaux</span></a>
                         </li>
                     </ul>
                 </div>

@@ -155,19 +155,19 @@ require_once("../header_inc.php")
 <section class="customer-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="customer-info">
           <h3>SINCE 2012</h3>
           <p>One More Cleaner was built on a commitment to consistent, high-quality cleaning across the Greater Montreal area.</p>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="customer-info">
           <h3>GREATER MONTREAL</h3>
           <p>Homes and offices across the island trust us for detailed cleans and long-term relationships tailored to their needs.</p>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="customer-info">
           <h3>100% SATISFACTION</h3>
           <p>Guaranteed. Period. We pride ourselves on being dependable, professional, thorough, and environmentally sustainable.</p>

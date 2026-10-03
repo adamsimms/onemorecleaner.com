@@ -46,7 +46,7 @@ if (isset($nav_active) && $nav_active === "house") {
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo $base_url; ?>media/sass/main.css?v=20261003type">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>media/sass/main.css?v=20261003mid">
 </head>
 
 <body>
@@ -62,11 +62,11 @@ if (isset($nav_active) && $nav_active === "house") {
                     <ul class="navbar-nav">
                         <li class="nav-item <?php echo ($nav_active == 'house') ? 'active' : '' ?>">
                             <a class="nav-link" href="<?php echo $base_url ?>house-cleaning-services-montreal/"><img src="<?php echo $base_url; ?>media/images/illustration (1).png" alt="House cleaning" class="img-fluid">
-                                House</a>
+                                <span class="nav-short">House</span><span class="nav-full">House Cleaning</span></a>
                         </li>
                         <li class="nav-item <?php echo ($nav_active == 'office') ? 'active' : '' ?>">
                             <a class="nav-link" href="<?php echo $base_url ?>office-cleaning-montreal/"> <img src="<?php echo $base_url; ?>media/images/illustration (2).png" alt="Office cleaning" class="img-fluid">
-                                Office</a>
+                                <span class="nav-short">Office</span><span class="nav-full">Office Cleaning</span></a>
                         </li>
                     </ul>
                 </div>
