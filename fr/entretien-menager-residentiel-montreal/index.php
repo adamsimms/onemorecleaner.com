@@ -161,19 +161,19 @@ require_once("../header_inc.php")
 <section class="customer-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="customer-info">
           <h3>DEPUIS 2012</h3>
           <p>One More Cleaner a été créé pour offrir un service de nettoyage constant et de haute qualité dans la région du Grand Montréal.</p>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="customer-info">
           <h3>GRAND MONTRÉAL</h3>
           <p>Des maisons et des bureaux partout sur l'île nous font confiance pour un ménage minutieux et des relations durables adaptées à leurs besoins.</p>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="customer-info">
           <h3>100% SATISFACTION</h3>
           <p>Garanti. Nous sommes fiers d'être fiables, professionnels et minutieux.</p>

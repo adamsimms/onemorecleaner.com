@@ -10,7 +10,9 @@
     font-size: 16px;
     line-height: 1.55;
     color: #fff;
-    width: 220px;
+    max-width: 22ch;
+    width: auto;
+    padding: 0 8px;
   }
 
   h2 {
@@ -32,18 +34,29 @@
   .how-it-works {
     padding: 0 15px;
     width: 100%;
-    @media (min-width:769px) {
+    @media (min-width: 992px) {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
     }
     li {
       margin-bottom: 50px;
       text-align: center;
+      position: relative;
+      flex: 1 1 0;
+      min-width: 0;
+      z-index: 1;
 
       img { margin-bottom: 15px; }
 
-      &.first-step {
+      p {
+        margin: 0 auto;
         position: relative;
+        z-index: 1;
+      }
+
+      &.first-step {
         &:before {
           position: absolute;
           content: '';
@@ -53,19 +66,28 @@
           top: 125px;
           right: 0;
           background-size: 70%;
+          pointer-events: none;
+          z-index: 0;
           @media(min-width:375px) { background-size: 100%; }
-          @media(min-width:768px) { right: 100px; }
-          @media (min-width:769px) {
-            width: 191px;
+          @media (min-width: 768px) and (max-width: 991px) {
+            display: none;
+          }
+          @media (min-width: 992px) {
+            display: none;
+          }
+          @media (min-width: 1200px) {
+            display: block;
+            width: 160px;
             height: 43px;
-            background: url('../images/works-down.png') right 0 no-repeat;
-            top: 50%;
-            left: 100%;
+            background: url('../images/works-down.png') center no-repeat;
+            background-size: contain;
+            top: 40px;
+            right: auto;
+            left: calc(100% - 12px);
           }
         }
       }
       &.second-step {
-        position: relative;
         &:before {
           position: absolute;
           content: '';
@@ -75,23 +97,28 @@
           left: -10px;
           top: 125px;
           background-size: 70%;
+          pointer-events: none;
+          z-index: 0;
           @media(min-width:375px) { background-size: 100%; }
-          @media(min-width:768px) { left: 100px; }
-          @media (min-width:769px) {
-            width: 191px;
+          @media (min-width: 768px) and (max-width: 991px) {
+            display: none;
+          }
+          @media (min-width: 992px) {
+            display: none;
+          }
+          @media (min-width: 1200px) {
+            display: block;
+            width: 160px;
             height: 43px;
-            background: url('../images/works-up.png') right 0 no-repeat;
-            top: -10px;
-            left: 100%;
+            background: url('../images/works-up.png') center no-repeat;
+            background-size: contain;
+            top: 8px;
+            left: calc(100% - 12px);
           }
         }
       }
       &.third-step {
         margin-bottom: 0;
-      }
-
-      p {
-        margin: 0 auto;
       }
     }
   }
