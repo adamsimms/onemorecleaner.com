@@ -33,6 +33,9 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        @media (min-width: 992px) {
+            display: none;
+        }
         &[aria-expanded="true"]{
             .hamburger-inner{
                 &:before{

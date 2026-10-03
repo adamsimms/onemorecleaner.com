@@ -134,6 +134,11 @@ h5 {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
 .navbar-expand-lg .navbar-toggler[aria-expanded=true] .hamburger-inner:before {
   transform: translate3d(-8px, 0, 0) rotate(-45deg) scaleX(0.7);
 }
