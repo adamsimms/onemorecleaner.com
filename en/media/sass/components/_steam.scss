@@ -7,12 +7,34 @@
   }
 
   .steam-actions {
-    margin-top: 10px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+
+    .btn.btn-primary {
+      width: auto;
+      max-width: 100%;
+      display: inline-flex;
+      font-style: normal;
+      font-weight: 900;
+      white-space: nowrap;
+      padding: 14px 28px;
+      box-shadow: 3px 4px 0 #25425F;
+      @media (max-width: 575px) {
+        white-space: normal;
+        text-align: center;
+        padding: 14px 20px;
+      }
+      &:hover,
+      &:focus {
+        background-color: #25425F;
+        color: #FFFFFF;
+      }
+    }
   }
 
   .container {
       background: #DAF1F7;
-      padding: 66px 50px 30px;
+      padding: 66px 50px 48px;
       position: relative;
       @media (min-width: 768px) {
           border-bottom-left-radius: 30px;
