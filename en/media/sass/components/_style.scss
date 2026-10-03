@@ -160,7 +160,7 @@ section {
 .btn {
     &.btn-primary {
         background: #EF6E43;
-        box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.18);
+        box-shadow: 0 8px 18px rgba(37, 66, 95, 0.25);
         border-radius: 3px;
         border: none;
         font-family: 'Roboto', sans-serif;
@@ -179,6 +179,7 @@ section {
         &:hover{
             color: #EF6E43;
             background-color: #fff;
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
         }
     }
 }

@@ -18,7 +18,7 @@
       font-weight: 900;
       white-space: nowrap;
       padding: 14px 28px;
-      box-shadow: 3px 4px 0 #25425F;
+      box-shadow: 0 8px 18px rgba(37, 66, 95, 0.28);
       @media (max-width: 575px) {
         white-space: normal;
         text-align: center;
@@ -28,6 +28,7 @@
       &:focus {
         background-color: #25425F;
         color: #FFFFFF;
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.28);
       }
     }
   }
