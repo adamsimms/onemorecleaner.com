@@ -14,8 +14,8 @@ require_once("../header_inc.php")
     <div class="row">
       <div class="col-md-6">
         <div class="hero-intro">
-          <h1>MONTREAL’S
-            BEST HOUSE CLEANER.</h1>
+          <h1>MONTREAL’S<br>
+            <span class="hero-nowrap">BEST HOUSE CLEANER.</span></h1>
           <!-- <p>With a focus on environmentally sustainable services, we pride ourselves in offering our clients a squeaky clean peace of mind as Montreal’s best cleaners. We arrive on time to get the job done, professionally taking care of your home, from top to bottom.</p> -->
           <p>We pride ourselves on being environmentally sustainable.</p>
           <div class="hero-actions">

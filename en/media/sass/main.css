@@ -729,7 +729,7 @@ section.hero-banner {
 }
 @media (min-width: 992px) {
   .hero-intro {
-    max-width: 46%;
+    max-width: none;
     min-height: 500px;
   }
 }
@@ -755,6 +755,11 @@ section.hero-banner {
 @media (min-width: 992px) {
   .hero-intro h1 {
     font-size: 104px;
+  }
+}
+@media (min-width: 992px) {
+  .hero-intro h1 .hero-nowrap {
+    white-space: nowrap;
   }
 }
 .hero-intro p {

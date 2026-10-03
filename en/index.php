@@ -14,8 +14,8 @@ require_once("header_inc.php")
     <div class="row">
       <div class="col-md-6">
         <div class="hero-intro">
-          <h1>MONTREAL’S
-            BEST CLEANER.
+          <h1>MONTREAL’S<br>
+            <span class="hero-nowrap">BEST CLEANER.</span><br>
             PERIOD.</h1>
           <p>We pride ourselves on being environmentally sustainable.</p>
           <div class="hero-actions">
