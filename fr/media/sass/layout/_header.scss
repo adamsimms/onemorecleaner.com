@@ -30,6 +30,9 @@
         z-index: 110;
         width: 40px;
         height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         &[aria-expanded="true"]{
             .hamburger-inner{
                 &:before{
@@ -44,9 +47,10 @@
             outline: none;
         }
         .hamburger-inner{
-            position: absolute;
-            width: 30px;
-            height: 3px;
+            position: relative;
+            display: block;
+            width: 22px;
+            height: 2px;
             transition-timing-function: ease;
             transition-duration: .15s;
             transition-property: transform;
@@ -63,8 +67,8 @@
                 position: absolute;
                 content: "";
                 display: block;
-                width: 30px;
-                height: 3px;
+                width: 22px;
+                height: 2px;
                 transition-timing-function: ease;
                 transition-duration: .15s;
                 transition-property: transform;
