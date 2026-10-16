@@ -51,12 +51,9 @@ $('<img src="<?php echo $base_url; ?>media/images/vaccum-hover.svg"/>');
                   url: "send_email.php",
                   data: data,
                   type: "POST",
-                  success: function(data) {
-                      console.log(data);
+                  success: function() {
                       $("#form_container").hide();
                       $("#form_success").show();
-                      //alert('You message has been sent successfully.')
-                      //$("#mail-status").html(data);
                   },
                   error: function() {}
               });

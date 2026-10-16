@@ -1,2 +1,0 @@
-# onemorecleaner
-www.onemorecleaner.com
