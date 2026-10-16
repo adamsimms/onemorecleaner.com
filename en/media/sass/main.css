@@ -414,7 +414,7 @@ h5 {
 .navbar-light .navbar-brand i {
   width: 22px;
   height: 25px;
-  background: url("../images/vaccum.svg") 0 0 no-repeat;
+  background: url("../images/vacuum.svg") 0 0 no-repeat;
   display: inline-block;
   background-size: contain;
   margin-left: 2px;
@@ -428,7 +428,7 @@ h5 {
   .navbar-light .navbar-brand i {
     width: 35px;
     height: 42px;
-    background: url("../images/vaccum.svg") 0 0 no-repeat;
+    background: url("../images/vacuum.svg") 0 0 no-repeat;
     display: inline-block;
     background-size: contain;
   }
@@ -437,7 +437,7 @@ h5 {
   color: #25425F;
 }
 .navbar-light .navbar-brand:hover i {
-  background: url("../images/vaccum-hover.svg") 0 0 no-repeat;
+  background: url("../images/vacuum-hover.svg") 0 0 no-repeat;
   background-size: contain;
 }
 
@@ -1531,5 +1531,3 @@ section.hero-banner {
   max-width: 32ch;
   margin: 0 auto;
 }
-
-/*# sourceMappingURL=main.css.map */

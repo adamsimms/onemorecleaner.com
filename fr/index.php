@@ -23,7 +23,7 @@ require_once("header_inc.php")
         </div>
       </div>
       <div class="hero-img">
-        <img src="<?php echo $base_url; ?>media/images/illustration.png" alt="Professionnel du nettoyage prêt pour une visite à Montréal" class="img-fluid">
+        <img src="<?php echo $media_url; ?>images/hero-cleaner.png" alt="Professionnel du nettoyage prêt pour une visite à Montréal" class="img-fluid">
       </div>
     </div>
   </div>
@@ -32,7 +32,7 @@ require_once("header_inc.php")
 <!--Quote-->
 <section class="quote-section" id="quote">
   <div class="container">
-    <img src="<?php echo $base_url; ?>media/images/background-bubbles.png" alt="">
+    <img src="<?php echo $media_url; ?>images/background-bubbles.png" alt="" aria-hidden="true">
     <span id="form_container">
       <div class="row">
         <div class="col-12">
@@ -84,7 +84,7 @@ require_once("header_inc.php")
       </div>
       <div class="col-md-4 col-lg-4">
         <div class="offer-info">
-          <img src="<?php echo $base_url; ?>media/images/illustration (1).png" alt="Service de nettoyage à domicile à Montréal" class="img-fluid">
+          <img src="<?php echo $media_url; ?>images/house-cleaning.png" alt="Service de nettoyage à domicile à Montréal" class="img-fluid">
           <a class="offer-details" href="<?php echo $base_url; ?>entretien-menager-residentiel-montreal/">
             <span>Nettoyage à domicile</span>
             <i class="icon-right-arrow"></i>
@@ -93,7 +93,7 @@ require_once("header_inc.php")
       </div>
       <div class="col-md-4 col-lg-4">
         <div class="offer-info">
-          <img src="<?php echo $base_url; ?>media/images/illustration (2).png" alt="Service de nettoyage de bureaux à Montréal" class="img-fluid">
+          <img src="<?php echo $media_url; ?>images/office-cleaning.png" alt="Service de nettoyage de bureaux à Montréal" class="img-fluid">
           <a class="offer-details" href="<?php echo $base_url; ?>entretien-menager-bureaux-montreal/">
             <span>Nettoyage au bureau</span>
             <i class="icon-right-arrow"></i>
@@ -109,7 +109,7 @@ require_once("header_inc.php")
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-lg-4">
-          <img src="<?php echo $base_url; ?>media/images/bg-deep-stream.png" alt="Équipement et résultats de nettoyage à la vapeur en profondeur" class="img-fluid">
+          <img src="<?php echo $media_url; ?>images/bg-deep-steam.png" alt="Équipement et résultats de nettoyage à la vapeur en profondeur" class="img-fluid">
       </div>
       <div class="col-md-8 col-lg-8">
           <h3>Renseignez-vous sur notre</h3>

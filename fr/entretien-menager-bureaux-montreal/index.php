@@ -22,7 +22,7 @@ require_once("../header_inc.php")
         </div>
       </div>
       <div class="hero-img">
-        <img src="<?php echo $base_url; ?>media/images/illustration.png" alt="Professionnel du nettoyage prêt pour une visite à Montréal" class="img-fluid">
+        <img src="<?php echo $media_url; ?>images/hero-cleaner.png" alt="Professionnel du nettoyage prêt pour une visite à Montréal" class="img-fluid">
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ require_once("../header_inc.php")
 <!--Quote-->
 <section class="quote-section" id="quote">
   <div class="container">
-    <img src="<?php echo $base_url; ?>media/images/background-bubbles.png" alt="">
+    <img src="<?php echo $media_url; ?>images/background-bubbles.png" alt="" aria-hidden="true">
     <span id="form_container">
       <div class="row">
         <div class="col-12">
@@ -113,15 +113,15 @@ require_once("../header_inc.php")
     </div>
     <div class="row">
       <ul class="how-it-works">
-        <li class="first-step"><img src="<?php echo $base_url; ?>media/images/works-1.png" alt="Appelez-nous" class="img-fluid">
+        <li class="first-step"><img src="<?php echo $media_url; ?>images/works-1.png" alt="Appelez-nous" class="img-fluid">
           <p>Appelez-nous pour savoir comment nous pouvons vous aider et planifier une visite à votre domicile.</p>
         </li>
         <li class="second-step">
-          <img src="<?php echo $base_url; ?>media/images/works-2.png" alt="Visiter votre maison" class="img-fluid">
+          <img src="<?php echo $media_url; ?>images/works-2.png" alt="Visiter votre maison" class="img-fluid">
           <p>Nous visitons votre domicile, évaluons ce qui correspond le mieux à vos besoins et vous proposons une soumission.</p>
         </li>
         <li class="third-step">
-          <img src="<?php echo $base_url; ?>media/images/works-3.png" alt="Nettoyage" class="img-fluid">
+          <img src="<?php echo $media_url; ?>images/works-3.png" alt="Nettoyage" class="img-fluid">
           <p>Nous effectuons votre premier nettoyage à votre satisfaction.</p>
         </li>
       </ul>
@@ -134,7 +134,7 @@ require_once("../header_inc.php")
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-lg-4">
-          <img src="<?php echo $base_url; ?>media/images/bg-deep-stream.png" alt="Équipement et résultats de nettoyage à la vapeur en profondeur" class="img-fluid">
+          <img src="<?php echo $media_url; ?>images/bg-deep-steam.png" alt="Équipement et résultats de nettoyage à la vapeur en profondeur" class="img-fluid">
       </div>
       <div class="col-md-8 col-lg-8">
           <h3>Renseignez-vous sur notre</h3>

@@ -24,7 +24,7 @@ require_once("header_inc.php")
         </div>
       </div>
       <div class="hero-img">
-        <img src="<?php echo $base_url; ?>media/images/illustration.png" alt="Professional cleaner ready for a Montreal house cleaning visit" class="img-fluid">
+        <img src="<?php echo $media_url; ?>images/hero-cleaner.png" alt="Professional cleaner ready for a Montreal house cleaning visit" class="img-fluid">
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@ require_once("header_inc.php")
 <!--Quote-->
 <section class="quote-section" id="quote">
   <div class="container">
-    <img src="<?php echo $base_url; ?>media/images/background-bubbles.png" alt="">
+    <img src="<?php echo $media_url; ?>images/background-bubbles.png" alt="" aria-hidden="true">
     <span id="form_container">
       <div class="row">
         <div class="col-12">
@@ -85,7 +85,7 @@ require_once("header_inc.php")
       </div>
       <div class="col-md-4 col-lg-4">
         <div class="offer-info">
-          <img src="<?php echo $base_url; ?>media/images/illustration (1).png" alt="House cleaning service in Montreal" class="img-fluid">
+          <img src="<?php echo $media_url; ?>images/house-cleaning.png" alt="House cleaning service in Montreal" class="img-fluid">
           <a class="offer-details" href="<?php echo $base_url; ?>house-cleaning-services-montreal/">
             <span>House cleaning</span>
             <i class="icon-right-arrow"></i>
@@ -94,7 +94,7 @@ require_once("header_inc.php")
       </div>
       <div class="col-md-4 col-lg-4">
         <div class="offer-info">
-          <img src="<?php echo $base_url; ?>media/images/illustration (2).png" alt="Office cleaning service in Montreal" class="img-fluid">
+          <img src="<?php echo $media_url; ?>images/office-cleaning.png" alt="Office cleaning service in Montreal" class="img-fluid">
           <a class="offer-details" href="<?php echo $base_url; ?>office-cleaning-montreal/">
             <span>Office cleaning</span>
             <i class="icon-right-arrow"></i>
@@ -110,7 +110,7 @@ require_once("header_inc.php")
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-lg-4">
-          <img src="<?php echo $base_url; ?>media/images/bg-deep-stream.png" alt="Deep steam cleaning equipment and results" class="img-fluid">
+          <img src="<?php echo $media_url; ?>images/bg-deep-steam.png" alt="Deep steam cleaning equipment and results" class="img-fluid">
       </div>
       <div class="col-md-8 col-lg-8">
           <h3>Ask about our</h3>

@@ -8,9 +8,9 @@
 #                    usually public_html/  (or ./ if the FTP account is jailed to public_html)
 #
 # Live layout:
-#   en/  -> site root (public_html/)
-#   en/  -> public_html/en/
-#   fr/  -> public_html/fr/
+#   en/          -> site root (public_html/) including shared media/
+#   en/ (no media) -> public_html/en/
+#   fr/          -> public_html/fr/  (PHP only; assets load from /media/)
 
 name: Deploy to GoDaddy
 
@@ -97,6 +97,8 @@ jobs:
             **/README.md
             **/.ftp-deploy-sync-state.json
             **/.DS_Store
+            media/**
+            media/**/*
 
       - name: Deploy French site to /fr/
         uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65 # v4.3.5

@@ -27,14 +27,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 
-
   <script>
-
-$('<img src="<?php echo $base_url; ?>media/images/vaccum.svg"/>');
-$('<img src="<?php echo $base_url; ?>media/images/vaccum-hover.svg"/>');
-
       function sendEmail() {
-
           var data = {
               name: $("#name").val(),
               email: $("#email").val(),
@@ -44,20 +38,17 @@ $('<img src="<?php echo $base_url; ?>media/images/vaccum-hover.svg"/>');
           if (data.name == "" || data.email == "" || data.service == "") {
               return;
           }
-          var valid = true;
-          //valid = validateContact();
-          if (valid) {
-              jQuery.ajax({
-                  url: "send_email.php",
-                  data: data,
-                  type: "POST",
-                  success: function() {
-                      $("#form_container").hide();
-                      $("#form_success").show();
-                  },
-                  error: function() {}
-              });
-          }
+
+          jQuery.ajax({
+              url: "send_email.php",
+              data: data,
+              type: "POST",
+              success: function() {
+                  $("#form_container").hide();
+                  $("#form_success").show();
+              },
+              error: function() {}
+          });
       }
   </script>
 

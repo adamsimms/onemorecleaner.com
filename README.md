@@ -6,17 +6,20 @@ Marketing site for [onemorecleaner.com](https://onemorecleaner.com): bilingual (
 
 - PHP pages with shared header/footer includes
 - Bootstrap 4 (CDN)
-- SCSS compiled to `media/sass/main.css`
+- SCSS compiled to `en/media/sass/main.css`
 - Quote form via `send_email.php` (PHP `mail()`)
 - Deploy to GoDaddy cPanel over FTPS (GitHub Actions)
 
 ## Structure
 
 ```
-en/   English site (also published at the document root)
-fr/   French site (published at /fr/)
+en/                 English pages + shared media/
+en/media/           CSS, images, fonts, favicons (served from /media/)
+fr/                 French pages only (assets use /media/)
 .github/workflows/deploy.yml
 ```
+
+Both locales load assets via `$media_url` (`https://onemorecleaner.com/media/`).
 
 ### English routes
 
@@ -34,21 +37,21 @@ fr/   French site (published at /fr/)
 | `/fr/entretien-menager-residentiel-montreal/` | Résidentiel |
 | `/fr/entretien-menager-bureaux-montreal/` | Bureaux |
 
-Each locale keeps its own `header_inc.php`, `footer_inc.php`, `send_email.php`, and `media/` assets.
-
 ## Local development
-
-Serve either locale with PHP’s built-in server (or any local PHP host):
 
 ```bash
 php -S localhost:8080 -t en
-# or
-php -S localhost:8080 -t fr
 ```
 
-Styles live under `en/media/sass/` and `fr/media/sass/`. Edit `main.scss` and the partials, then compile to `main.css` (for example with [Prepros](https://prepros.io/) or `sass`). Commit the compiled CSS with SCSS changes so deploy stays self-contained.
+French pages expect assets at `/media/`. For local FR testing, either serve from a parent that maps `media/` to `en/media/`, or temporarily point `$media_url` at your local media path.
 
-`base_url` in `header_inc.php` points at production (`https://onemorecleaner.com/`). Adjust locally if asset paths break under a subdirectory.
+Styles live under `en/media/sass/`. Edit `main.scss` and the partials, then compile:
+
+```bash
+npx sass en/media/sass/main.scss en/media/sass/main.css --no-source-map
+```
+
+Commit the compiled CSS with SCSS changes so deploy stays self-contained.
 
 ## Deploy
 
@@ -56,8 +59,8 @@ Pushes to `main` (and manual `workflow_dispatch`) run **Deploy to GoDaddy**.
 
 Live layout:
 
-- `en/` → document root (`public_html/`)
-- `en/` → `public_html/en/`
+- `en/` → document root (`public_html/`), including shared `media/`
+- `en/` without `media/` → `public_html/en/`
 - `fr/` → `public_html/fr/`
 
 Required Actions secrets:

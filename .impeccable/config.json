@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-10-16T12:58:35.341Z",
+        "reason": "Existing site brand typeface already in production; not introducing a new AI-default font stack"
+      }
+    ]
+  }
+}
