@@ -499,11 +499,11 @@ html:has(.navbar-collapse.show) {
   display: inline-block;
 }
 @media (max-width: 767px) {
-  .footer .facebook {
+  .footer .footer-lang {
     margin-bottom: 40px;
   }
 }
-.footer .facebook a {
+.footer .footer-lang a {
   font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
@@ -518,27 +518,22 @@ html:has(.navbar-collapse.show) {
   color: #F5F4F2;
 }
 @media (max-width: 767px) {
-  .footer .facebook a {
+  .footer .footer-lang a {
     justify-content: center;
   }
 }
-.footer .facebook a img {
-  padding-right: 10px;
-}
-.footer .facebook a:hover {
+.footer .footer-lang a:hover {
   color: #25425F;
   text-decoration: none;
 }
-.footer .facebook a:hover i {
-  background: url("../images/facebook-hover.png") 0 0 no-repeat;
-}
-.footer .facebook a i {
-  background: url("../images/facebook.png") 0 0 no-repeat;
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  position: relative;
-  top: -3px;
+
+.quote-error {
+  margin-top: 16px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
 }
 
 html,

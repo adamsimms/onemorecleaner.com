@@ -47,7 +47,7 @@ if (isset($nav_active) && $nav_active === "domicile") {
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo $media_url; ?>sass/main.css?v=20261016assets">
+    <link rel="stylesheet" href="<?php echo $media_url; ?>sass/main.css?v=20261016harden">
 </head>
 
 <body>

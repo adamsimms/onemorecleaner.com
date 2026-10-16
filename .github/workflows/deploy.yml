@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Validate secrets
         id: secrets
@@ -61,7 +61,7 @@ jobs:
       # encryption with security: loose unless FTP_SERVER is set to the
       # hostname shown on the server certificate in cPanel.
       - name: Deploy English site to document root
-        uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65 # v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -80,7 +80,7 @@ jobs:
             **/.DS_Store
 
       - name: Deploy English site to /en/
-        uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65 # v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -101,7 +101,7 @@ jobs:
             media/**/*
 
       - name: Deploy French site to /fr/
-        uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65 # v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -118,3 +118,25 @@ jobs:
             **/README.md
             **/.ftp-deploy-sync-state.json
             **/.DS_Store
+
+      # /en/media was left behind from older deploys that mirrored full en/.
+      # Shared assets now live only at /media/, so remove the leftover copy.
+      - name: Remove leftover /en/media
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_SERVER_DIR: ${{ secrets.FTP_SERVER_DIR }}
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lftp
+          root="${FTP_SERVER_DIR%/}"
+          lftp -c "
+            set ftp:ssl-force true
+            set ftp:ssl-protect-data true
+            set ssl:verify-certificate no
+            open -u \"${FTP_USERNAME}\",\"${FTP_PASSWORD}\" ftps://${FTP_SERVER}:21
+            cd ${root}/en
+            rm -r -f media
+            bye
+          " || echo "en/media already absent or cleanup skipped"

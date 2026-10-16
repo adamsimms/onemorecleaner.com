@@ -13,8 +13,8 @@
                   </div>
               </div>
               <div class="col-md-4">
-                  <div class="facebook">
-                  <a href="https://www.onemorecleaner.com/en/"><!-- <i></i> --> EN</a>
+                  <div class="footer-lang">
+                  <a href="https://www.onemorecleaner.com/en/">EN</a>
                   </div>
               </div>
           </div>
@@ -28,26 +28,44 @@
   </body>
 
   <script>
-      function sendEmail() {
-          var data = {
-              name: $("#name").val(),
-              email: $("#email").val(),
-              service: $("#service").val()
-          };
+      function showQuoteError(message) {
+          var $err = $("#form_error");
+          if (!$err.length) {
+              $err = $('<div id="form_error" class="quote-error" role="alert"></div>');
+              $("#form_container").after($err);
+          }
+          $err.text(message || "Désolé, nous n'avons pas pu envoyer votre demande. Réessayez ou écrivez-nous.").show();
+      }
 
-          if (data.name == "" || data.email == "" || data.service == "") {
+      function sendEmail() {
+          var name = $.trim($("#name").val() || "");
+          var email = $.trim($("#email").val() || "");
+          var service = $.trim($("#service").val() || "");
+          var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+          $("#form_error").hide();
+
+          if (!name || !email || !service || !emailOk) {
+              showQuoteError("Veuillez entrer votre nom, un courriel valide et un service.");
               return;
           }
 
           jQuery.ajax({
               url: "send_email.php",
-              data: data,
+              data: { name: name, email: email, service: service },
               type: "POST",
-              success: function() {
-                  $("#form_container").hide();
-                  $("#form_success").show();
+              success: function(data) {
+                  if (String(data).trim() === "OK") {
+                      $("#form_container").hide();
+                      $("#form_error").hide();
+                      $("#form_success").show();
+                      return;
+                  }
+                  showQuoteError();
               },
-              error: function() {}
+              error: function() {
+                  showQuoteError();
+              }
           });
       }
   </script>
